@@ -6,35 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-   <div style= "margin: 3%; background-color:rgb(220, 237, 230);">
-<div style="margin: 5%;font-family:verdana;"> <br>
-<h1 style="color:rgb(131, 8, 82);">РЕЗЮМЕ</h1>
-<hr> 
-<img src="image\ava.jpg" alt="foto" width="200" style="margin: 5% 5% 5% 0%">
-<br>
-<hr> <h2>Основні данні</h2> <hr> 
-    <div style="margin: 2% 5% 5% 0%">
-        <br>
-        імя: <b style="color:rgb(131, 8, 82);font-size:24px;">Центерадзе Анжела</b> 
-        <br>
-        номер телефону: <b style="color:rgb(131, 8, 82);font-size:24px;">0638365704</b> 
-        <br>
-        email: <b style="color:rgb(131, 8, 82);font-size:24px;">ddzhangel@gmail.com</b> 
-        <br>
-        <br>
-        fb: <b style="color:rgb(131, 8, 82);font-size:24px;"><a href="https://www.facebook.com/angela.tcenteradze">fb/angela.tcenteradze</a></b> 
-        <br>
-    </div>
-    <div>
-<hr> <h2> Досвід роботи</h2> <hr> 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente nihil eaque incidunt porro officia in commodi, architecto aliquid praesentium quis deserunt ab ipsa esse doloremque mollitia aut, vero distinctio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam minus sapiente consequatur? Recusandae, enim. Exercitationem fuga voluptates cumque. Eos voluptate a ipsam. Sed consequuntur beatae itaque possimus iste nam? </p> 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at dolores nihil porro sapiente mollitia, laborum modi magni odio. Tempore neque libero minima! Totam non dolorum, facilis voluptatem eligendi odio!</p>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellat ipsa excepturi ipsum, delectus tempora nemo, voluptates non molestias aperiam, vel nesciunt ea. Dicta quo necessitatibus recusandae? Soluta, aliquid a?</p>
-    <br><br> </div>
-</div>
-</div> 
+<body bgcolor="#efefef">
+    <h1>Home work FORMS</h1>
+    <form action="/action_page.php" method="post">
+        <fieldset>
+            <legend> ФОРМА ДЛЯ ЗАПОВНЕННЯ </legend>
+            <label> 
+                <p> Повне ім'я
+                <input type="text" >
+                </p>
+            </label>
+            <label>    
+                <p> Email
+                    <input type="email">
+                </p>
+            </label>
+            <label>    
+                <p> Пароль
+                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </p>
+            </label>
+            <label> 
+                <p> Підтвердження пароля
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </p>
+            </label>
+            <label> 
+                <p> Стать
+                <input type="radio">Жіноча</label> <label for=""><input type="radio">Чоловіча</label>
+                </p>
+            </label>
+            <label> 
+                <p>Вік
+                    <input type="number" min="18" max="100">
+                </p>
+            </label>
+            <label>
+                <p>Курс
+                <select id="cars" name="cars"> 
+                <option value="">-=Виберіть курс=-</option>
+                <option value="Front-End">Front-End</option>
+                <option value="Project Management">Project Management</option>
+                <option value="QA Manual">QA Manual</option>
+                </select>
+                </p>
+            </label>
+            <legend>
+                <p>Повна адреса
+                   <textarea cols="20" rows="4" placeholder="Країна, регіон, місто/селіще, вуліця" ></textarea> 
+                </p>
+            </legend>
+            <legend>
+                <p><input type="checkbox"> Я погоджуюсь з обробкою конфіденціальних данних</p>
+            </legend>
+            <legend>
+                <p>
+                    <button type="reset">Очистити форму</button>
+                    <button type="submit" >Зареєструватись</button>
+                </p>
+            </legend>
+        </fieldset>
+    </form>
 </body>
 </html>
-
