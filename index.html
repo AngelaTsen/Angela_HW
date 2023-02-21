@@ -8,42 +8,42 @@
 </head>
 <body bgcolor="#efefef">
     <h1>Home work FORMS</h1>
-    <form action="/action_page.php" method="post">
+    <form action="#" >
         <fieldset>
             <legend> ФОРМА ДЛЯ ЗАПОВНЕННЯ </legend>
             <label> 
                 <p> Повне ім'я
-                <input type="text" >
+                <input type="text" name="name" required>
                 </p>
             </label>
             <label>    
                 <p> Email
-                    <input type="email">
+                    <input type="email" name="email" required>
                 </p>
             </label>
             <label>    
                 <p> Пароль
-                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <input type="password" name="password" required>
                 </p>
             </label>
             <label> 
                 <p> Підтвердження пароля
-                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <input type="password" name="password" required>
                 </p>
             </label>
             <label> 
                 <p> Стать
-                <input type="radio">Жіноча</label> <label for=""><input type="radio">Чоловіча</label>
+                <input type="radio" name="sex m"> Жіноча</label> <label><input type="radio" name="sex f">Чоловіча</label>
                 </p>
             </label>
             <label> 
                 <p>Вік
-                    <input type="number" min="18" max="100">
+                    <input type="number" name="old" min="18" max="100">
                 </p>
             </label>
             <label>
                 <p>Курс
-                <select id="cars" name="cars"> 
+                <select  name="cours"> 
                 <option value="">-=Виберіть курс=-</option>
                 <option value="Front-End">Front-End</option>
                 <option value="Project Management">Project Management</option>
@@ -53,14 +53,14 @@
             </label>
             <legend>
                 <p>Повна адреса
-                   <textarea cols="20" rows="4" placeholder="Країна, регіон, місто/селіще, вуліця" ></textarea> 
+                   <textarea cols="20" rows="4" name="address" placeholder="Країна, регіон, місто/селіще, вуліця" ></textarea> 
                 </p>
             </legend>
             <legend>
-                <p><input type="checkbox"> Я погоджуюсь з обробкою конфіденціальних данних</p>
+                <p><input type="checkbox" name="Data Processing"> Я погоджуюсь з обробкою конфіденціальних данних</p>
             </legend>
             <legend>
-                <p>
+                <p align=”center”> 
                     <button type="reset">Очистити форму</button>
                     <button type="submit" >Зареєструватись</button>
                 </p>
