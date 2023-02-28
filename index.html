@@ -5,63 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
-    <title>Document</title>
+    <title>Denis Novik</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-bar">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#" >Home</a>
                 </li>
                 <li>
-                    <a href="#">About me</a>
+                    <a href="#About me" >About me</a>
                 </li>
                 <li>
-                    <a href="#">Skills</a>
+                    <a href="#Skills" >Skills</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#Portfolio" >Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Contacts</a>
+                    <a href="#Contacts" >Contacts</a>
                 </li>
             </ul>
         </nav>
-        <hr>
-        <section>
-        <h1>Denis Novik</h1>
-        <img src="/image/photox940.jpg" alt="head foto">
+        <section class="header">
+            <hr>
+            <h1>Denis Novik</h1>
+            <img src="/image/photox940.jpg" class="baner" alt="head foto">
         </section>
     </header>
     <main>
-        <section>
-            <h2>About me</h2>
+        <section class="bg-gray">
+            <h2 id="About me">About me</h2>
             <p>
-                Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. <br> 
-                I'm studying at courses "Web and mobile design interfaces" in IT-Academy. <br> 
-                Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+                Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it. <br> <br>
+                I'm studying at courses "Web and mobile design interfaces" in IT-Academy. <br> <br>
+                Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. <br> <br> <br>
             </p>
         </section>
         <section>
-            <h2>Skills</h2>
+            <h2 id="Skills">Skills</h2>
             <p>I work in such programs as</p>
-            <img src="/image/Ps.svg" alt="Adobe Photoshop"> <span>Adobe Photoshop</span>
-            <img src="/image/Ai.svg" alt="dobe Illustrator"> <span>Adobe Illustrator</span>
-            <img src="/image/Ae.svg" alt="dobe After Effects"> <span>Adobe After Effects</span>
-            <img src="/image/Figma.svg" alt="Figma"> <span>Figma</span>
+                <div class="skill-blocks">
+                    <img src="/image/Ps.svg" alt="Adobe Photoshop">
+                    <br><span>Adobe <br> Photoshop</span>
+                    <br><img src="/image/star.svg" alt="★">
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                </div>
+                <div class="skill-blocks">
+                    <img src="/image/Ai.svg" alt="dobe Illustrator"> 
+                    <br><span>Adobe <br> Illustrator</span>
+                    <br><img src="/image/star.svg" alt="★">
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                </div>
+                <div class="skill-blocks">
+                    <img src="/image/Ae.svg" alt="dobe After Effects"> 
+                    <br><span>Adobe <br> After Effects</span>
+                    <br><img src="/image/star.svg" alt="★">
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                </div>
+                <div class="skill-blocks">
+                    <img src="/image/Figma.svg" alt="Figma"> 
+                    <br><span>Figma</span>
+                    <br><img src="/image/star.svg" alt="★">
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                </div>
         </section>
-        <section>
-            <h2>Portfolio</h2>
-            <img src="/image/Fashion-Store.jpg" alt="Fashion-Store"><p>Online fashion store - Homepage</p>
-            <img src="/image/reebok_web.jpg" alt="reebok web"><p>Reebok Store - Concept</p>
-            <img src="/image/braun-landing.jpg" alt="braun landing"><p>Braun Landing Page - Concept</p>
+        <section class="bg-gray" >
+            <h2 id="Portfolio">Portfolio</h2>
+            <img src="/image/Fashion-Store.jpg" class="baner"  alt="Fashion-Store"><a href="#"><div>Online fashion store - Homepage</div> </a> 
+            <img src="/image/reebok_web.jpg" class="baner"  alt="reebok web"><a href="#"><div>Reebok Store - Concept</div> </a>
+            <img src="/image/braun-landing.jpg" class="baner"  alt="braun landing"><a href="#"><div>Braun Landing Page - Concept</div></a> <br><br>
         </section>
     </main>
     <footer>
-            <h2>Contacts</h2>
+            <h2 id="Contacts">Contacts</h2>
             <p>Want to know more or just chat? <br> You are welcome!</p>
-            <button type="submit">Send message</button> 
+                <form action="mailto:test@gmail.com" >
+                    <button type="submit" class="btm">Send message</button> 
+                </form>
             <nav>
                 <ul>
                     <li><a href="#"><img src="/image/linkedin.png" alt="linkedin"></a></li> 
@@ -70,7 +104,7 @@
                     <li><a href="#"><img src="/image/dribbble.png" alt="dribbble"></a></li>
                 </ul>
              </nav>
-            <span>Like me on LinkedIn, Instagram, Behance, Dribble</span>
+            <p class="footer">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
     </footer>
 </body>
 </html>
