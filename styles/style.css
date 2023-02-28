@@ -129,3 +129,29 @@ footer p {
 a:hover {
     opacity: 0.4;
 }
+
+.rating1 {
+    text-align: left;
+}
+
+.rating1 .rating__wrapper {
+    direction: ltr;
+}
+
+.rating1 input[type="radio"] {
+    display: none;
+}
+
+
+.rating1 .star1 {
+    font-size: 26px;
+    cursor: pointer;
+    color: #E5E5E5;
+}
+
+.rating1 .star1:hover,
+.rating1 .star1:hover ~ .star1,
+.rating1 input:checked ~ .star1
+.rating1 input:checked + .star1 {
+    color: #070707;
+}
