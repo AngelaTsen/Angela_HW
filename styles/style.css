@@ -1,0 +1,65 @@
+@import "/styles/reset.css";
+
+body {
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.9px;
+    background-color: #3B3F45 ;
+}
+
+header {
+    color: #FF8984;
+    background-color: #4A4F56;
+    padding: 10px;
+}
+section {
+    margin-top: 20px;
+}
+
+section div {
+    margin: 0 25%;
+    padding: ;
+    display: flex;
+    flex-direction: row;
+    width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 102px;
+    background: #88839E;
+}
+
+section div:hover {
+    background: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+.foods-list div:has(input:checked ) {
+    -web-webkit-box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.35);
+    box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.35);
+    text-decoration: line-through;
+}
+
+div:nth-child(2n) {
+    background: #7A7593;
+}
+
+label {
+    padding: 13px;
+}
+
+.hint {
+    font-size: 11px;
+    line-height: 12.89px;
+}
+
+.hint::before {content: '(';}
+.hint::after {content: ')';}
+
+* { 
+    transition: all .1s ease-in;
+}
