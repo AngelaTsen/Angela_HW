@@ -9,6 +9,7 @@ body {
     font-size: 18px;
     line-height: 21.9px;
     background-color: #3B3F45 ;
+    border: solid 5px #FFFFFF;
 }
 
 header {
@@ -22,7 +23,6 @@ section {
 
 section div {
     margin: 0 25%;
-    padding: ;
     display: flex;
     flex-direction: row;
     width: 534px;
@@ -37,6 +37,11 @@ section div:hover {
     border-top: 3px solid #FFFFFF;
     border-bottom: 3px solid #FFFFFF;
 }
+
+section div:active {
+    background:  #FF8984;
+}
+
 .foods-list div:has(input:checked ) {
     -web-webkit-box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.35);
     -moz-box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.35);
@@ -59,6 +64,18 @@ label {
 
 .hint::before {content: '(';}
 .hint::after {content: ')';}
+
+footer > form {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* width: 534px;
+    height: 45px;
+    left: 129px;
+    top: 102px; */
+    padding: 20px;
+    margin: 0 25%;
+    background: #4A4F56;
+}
 
 * { 
     transition: all .1s ease-in;
