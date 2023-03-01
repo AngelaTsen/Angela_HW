@@ -4,37 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Denis Novik</title>
 </head>
 <body>
-   <div style= "margin: 3%; background-color:rgb(220, 237, 230);">
-<div style="margin: 5%;font-family:verdana;"> <br>
-<h1 style="color:rgb(131, 8, 82);">РЕЗЮМЕ</h1>
-<hr> 
-<img src="image\ava.jpg" alt="foto" width="200" style="margin: 5% 5% 5% 0%">
-<br>
-<hr> <h2>Основні данні</h2> <hr> 
-    <div style="margin: 2% 5% 5% 0%">
-        <br>
-        імя: <b style="color:rgb(131, 8, 82);font-size:24px;">Центерадзе Анжела</b> 
-        <br>
-        номер телефону: <b style="color:rgb(131, 8, 82);font-size:24px;">0638365704</b> 
-        <br>
-        email: <b style="color:rgb(131, 8, 82);font-size:24px;">ddzhangel@gmail.com</b> 
-        <br>
-        <br>
-        fb: <b style="color:rgb(131, 8, 82);font-size:24px;"><a href="https://www.facebook.com/angela.tcenteradze">fb/angela.tcenteradze</a></b> 
-        <br>
-    </div>
-    <div>
-<hr> <h2> Досвід роботи</h2> <hr> 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sapiente nihil eaque incidunt porro officia in commodi, architecto aliquid praesentium quis deserunt ab ipsa esse doloremque mollitia aut, vero distinctio.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam minus sapiente consequatur? Recusandae, enim. Exercitationem fuga voluptates cumque. Eos voluptate a ipsam. Sed consequuntur beatae itaque possimus iste nam? </p> 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at dolores nihil porro sapiente mollitia, laborum modi magni odio. Tempore neque libero minima! Totam non dolorum, facilis voluptatem eligendi odio!</p>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellat ipsa excepturi ipsum, delectus tempora nemo, voluptates non molestias aperiam, vel nesciunt ea. Dicta quo necessitatibus recusandae? Soluta, aliquid a?</p>
-    <br><br> </div>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li>
+                    <a href="#" >Home</a>
+                </li>
+                <li>
+                    <a href="#About me" >About me</a>
+                </li>
+                <li>
+                    <a href="#Skills" >Skills</a>
+                </li>
+                <li>
+                    <a href="#Portfolio" >Portfolio</a>
+                </li>
+                <li>
+                    <a href="#Contacts" >Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="header">
+            <hr>
+            <h1>Denis Novik</h1>
+            <img src="/image/photox940.jpg" class="baner" alt="head foto">
+        </section>
+    </header>
+    <main>
+        <section class="bg-gray">
+            <h2 id="About me">About me</h2>
+            <p>
+                Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it. <br> <br>
+                I'm studying at courses "Web and mobile design interfaces" in IT-Academy. <br> <br>
+                Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it. <br> <br> <br>
+            </p>
+        </section>
+        <section>
+            <h2 id="Skills">Skills</h2>
+            <p>I work in such programs as</p>
+                <div class="skill-blocks">
+                    <img src="/image/Ps.svg" alt="Adobe Photoshop">
+                    <br><span>Adobe <br> Photoshop</span>
+                    <br><img src="/image/star.svg" alt="★">
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                    <img src="/image/star.svg" alt="☆" class="rating"><br>
+<div class="wrapper">
+                    <form action="#" class="rating1">
+                        <div class="rating__wrapper">
+                        <input type="radio" id="rv-1" value="5">
+                        <label for="rv-1" class="star1"> &#9733;</label>
+
+                        <input type="radio" id="rv-2" value="4">
+                        <label for="rv-2" class="star1"> &#9733;</label>
+
+                        <input type="radio" id="rv-3" value="3">
+                        <label for="rv-3" class="star1"> &#9733;</label>
+
+                        <input type="radio" id="rv-4" value="2">
+                        <label for="rv-4" class="star1"> &#9733;</label>
+
+                        <input type="radio" id="rv-5" value="1">
+                        <label for="rv-5" class="star1"> &#9733;</label>   
+                        </div>
+                    </form>
 </div>
-</div> 
+<script>
+    document.querySelector('form').addEventListener('change', (event) => { console.log event.target.value
+    })
+</script>
+
+                    
+                </div>
+                <div class="skill-blocks">
+                    <img src="/image/Ai.svg" alt="dobe Illustrator"> 
+                    <br><span>Adobe <br> Illustrator</span>
+                    <br><img src="/image/star.svg" alt="★">
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                </div>
+                <div class="skill-blocks">
+                    <img src="/image/Ae.svg" alt="dobe After Effects"> 
+                    <br><span>Adobe <br> After Effects</span>
+                    <br><img src="/image/star.svg" alt="★">
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="☆" class="rating">
+                </div>
+                <div class="skill-blocks">
+                    <img src="/image/Figma.svg" alt="Figma"> 
+                    <br><span>Figma</span>
+                    <br><img src="/image/star.svg" alt="★">
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                    <img src="/image/star.svg" alt="★" >
+                </div>
+        </section>
+        <section class="bg-gray" >
+            <h2 id="Portfolio">Portfolio</h2>
+            <img src="/image/Fashion-Store.jpg" class="baner"  alt="Fashion-Store"><a href="#"><div>Online fashion store - Homepage</div> </a> 
+            <img src="/image/reebok_web.jpg" class="baner"  alt="reebok web"><a href="#"><div>Reebok Store - Concept</div> </a>
+            <img src="/image/braun-landing.jpg" class="baner"  alt="braun landing"><a href="#"><div>Braun Landing Page - Concept</div></a> <br><br>
+        </section>
+    </main>
+    <footer>
+            <h2 id="Contacts">Contacts</h2>
+            <p>Want to know more or just chat? <br> You are welcome!</p>
+                <form action="mailto:test@gmail.com" >
+                    <button type="submit" class="btm">Send message</button> 
+                </form>
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="/image/linkedin.png" alt="linkedin"></a></li> 
+                    <li><a href="#"><img src="/image/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="/image/behance.png" alt="behance"></a></li>
+                    <li><a href="#"><img src="/image/dribbble.png" alt="dribbble"></a></li>
+                </ul>
+             </nav>
+            <p class="footer">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+    </footer>
 </body>
 </html>
-

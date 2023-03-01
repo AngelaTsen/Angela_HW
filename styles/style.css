@@ -1,0 +1,157 @@
+@import "/styles/reset.css";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-style: normal;
+    color: #070707;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    background-color: width ;
+}
+
+img.baner {
+    width: 100%;
+}
+
+a {
+    color: #070707; 
+}
+
+.nav-bar a{ 
+    text-decoration: none;  
+}
+
+/* .nav-bar a:hover {
+    color: #828282;
+} */
+
+ .header, section.bg-gray {
+    padding: 0 20%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: left;
+    padding: 0 0 50px 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    padding: 100px 0 30px 0;
+}
+
+p {
+    margin: 0 25% 0 25%;
+    line-height: 2;
+}
+.bg-gray {
+    background: #E5E5E5;
+}
+
+.btm {
+    background: #070707;
+    color: white;
+    border-radius: 22px;
+    width: 180px;
+    height: 44px;
+    align-items: center;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    border: #070707;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    margin: 20px 0;
+}
+
+.btm:hover {
+    background: white;
+    color: #070707;
+    border: 3px solid #070707;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 40px;
+}
+
+.nav-bar li{
+    margin: 18px
+}
+
+.skill-blocks{
+    display: inline-block;
+    margin: 50px;
+}
+
+.skill-blocks span{
+font-size: 14px;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0.02em;
+color: #828282;
+}
+
+.rating {
+    opacity: 0.15;
+}
+
+.skill-blocks img {
+    padding: 40px 0;
+}
+
+.bg-gray div {
+    margin: 40px 20px;
+}
+
+footer p {
+    margin: 0 25% 40px 25%;
+}
+
+.footer  {
+    color: #828282;
+    margin: 40px 0 100px 0;
+    width: 200px;
+    size: 14px;
+    display: inline-block;
+}
+a:hover {
+    opacity: 0.4;
+}
+
+.rating1 {
+    text-align: left;
+}
+
+.rating1 .rating__wrapper {
+    direction: ltr;
+}
+
+.rating1 input[type="radio"] {
+    display: none;
+}
+
+
+.rating1 .star1 {
+    font-size: 26px;
+    cursor: pointer;
+    color: #E5E5E5;
+}
+
+.rating1 .star1:hover,
+.rating1 .star1:hover ~ .star1,
+.rating1 input:checked ~ .star1
+.rating1 input:checked + .star1 {
+    color: #070707;
+}
