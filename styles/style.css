@@ -65,16 +65,27 @@ label {
 .hint::before {content: '(';}
 .hint::after {content: ')';}
 
+footer {
+margin: 50px;
+}
 footer > form {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* width: 534px;
+    display: flex; 
     height: 45px;
-    left: 129px;
-    top: 102px; */
-    padding: 20px;
-    margin: 0 25%;
+    margin: 0 22%;
     background: #4A4F56;
+    text-align: center;
+}
+button {
+    background: none;
+    color: #FF8984;
+    width: 180px;
+    height: 44px;
+    border: none;
+    margin: 0 auto;
+}
+
+button:hover {
+    color: #ffffff;
 }
 
 * { 
