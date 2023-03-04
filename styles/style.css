@@ -1,14 +1,15 @@
 @import "/styles/reset.css";
+@import "/styles/weather-icons.min.css";
 
 body {
-    font-family:'Montserrat', sans-serif;;
-    text-align: :right;
+    font-family:'Montserrat', sans-serif;
     font-style: normal;
-    color: #2F281E;
+    color: #FFFFFF;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    background-color: width ;
+    font-size: 22px;
+    line-height: 25px;
+    background-color: #3399CC ;
+    border: 5px solid #2B81AC;
 }
 
 .logo {
