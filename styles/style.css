@@ -2,24 +2,186 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
     font-style: normal;
-    color: #070707;
+    color: #595858;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
+    background-color: #E5E5E5;
+    padding: 35px;
     text-align: center;
-    background-color: width ;
+}
+button:not(.delete) {
+    background-color: #007BFF ; 
+    height: 38px;
+    width: 150px;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
 }
 
-.popup {
+.btn-big {
+    width: 100%;
+}
+
+.popup-1 {
     padding: 40px;
-    border: 1px solid #070707 ;
     display: inline-block;
     border-radius: 8px;
     background: white;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    
+    top: 20%;
+    left: 20%;
+    text-align: center;
 }
+
+.popup-2 {
+    padding: 40px;
+    display: inline-block;
+    border-radius: 8px;
+    background: white;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1C1C1C;
+
+}
+
+.text-info {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+.list-body {
+    height: 590px;
+    width: 570px;
+    border-radius: 6px;
+    background: #ffffff;
+    padding: 35px;
+    display: inline-block;
+    text-align: left;
+}
+
+ .form-1 {
+    text-align: left;
+    margin-top: 20px;
+ }
+
+ .form-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+ }
+
+ label {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: #545454;
+
+ }
+
+input:not(input[type=radio],input[type=file]) {
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    height: 38px;
+    width: 100%;
+    margin-top: 10px;
+ }
+ .radio {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+ }
+ .radio label {
+    padding: 0 21px 0 0;
+ }
+
+ .form-2 label {
+    width: 275px;
+
+ }
+
+ .form-2 input:hover, .form-1 input:hover,
+ .form-2 input:active, .form-1 input:active {
+    border: 1px solid #007BFF;
+ }
+ 
+ footer a {
+    color: #007BFF;
+ }
+ footer {
+    margin: 22px 0;
+ }
+
+ hr {
+    opacity: 0.3;
+    margin: 15px 0;
+ }
+.input-delete {
+    width: 201px;
+    display: inline-block;
+    height: 38px;
+    margin-left: 20px;
+ }
+ .delete {
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    margin-left: 10px;
+ }  
+ .input-delete input[type=file] {
+    width:138px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    position: absolute; 
+    visibility: hidden;
+ }
+
+ .file-input {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    height: 30px;
+    width: 138px;
+    text-align: right;
+    padding-right: 11px;
+ }
+
+ .avatar {
+    display: flex;
+    align-items: center;
+ }
+
+ .img-ava {
+    border-radius: 50%;
+ }
