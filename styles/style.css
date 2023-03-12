@@ -2,9 +2,11 @@
 @import "/styles/stylesheet.css";
 
 body {
-    background-color: width ;
-    margin: 0 10%;
+    background-image: url(/image/bg-picture.svg);
+    background-position: 100% 5%;
+    margin: 0 10% 10% 10%;
     font-family: 'pt_sansregular';
+    background-repeat: no-repeat;
     font-size: 28px;
     font-weight: 400;
     line-height: 48px;
@@ -13,6 +15,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .header {
@@ -26,6 +29,7 @@ header {
 main {
     display: flex;
     margin-top: 100px;
+    gap: 15px;
 }
 
 aside {
@@ -38,9 +42,14 @@ aside {
 }
 
 aside li {
-    padding: 10px;
+    border-bottom: 1px solid #BDBDBD;
     margin-bottom: 80px;
-    border-block-end-width: 4px;
+    padding: 10px 0;
+}
+
+aside ul {
+    position: sticky;
+    top: 80px;
 }
 
 .wrapper {
@@ -55,8 +64,8 @@ h1 {
     text-transform: uppercase;
     font-size: 36px;
     letter-spacing: 0.04em;
-    padding: 0 0 70px 0;
-    }
+    padding: 0 0 40px 0;
+}
 
 .section li {
     padding: 20px 0;
@@ -74,10 +83,11 @@ h1 {
 sup {
     font-family: 'farrolight', sans-serif;
     color: gray;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0.04em;
+    vertical-align: top;
 }
 
 a {
@@ -115,4 +125,45 @@ p {
     background-color: #DADADA;
  }
 
- 
+ .black-line {
+    width: 100px;
+    height: 8px;
+    background: #000000;
+    margin: 0 0 7px 0;
+ }
+
+ footer {
+    margin: 50px 0;
+    font-family: 'pt_sansregular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    height: 275px;
+ }
+
+  
+.flip-card-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
