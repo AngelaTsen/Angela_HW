@@ -103,7 +103,9 @@ h1 {
 
  }
 
-input:not(input[type=radio],input[type=file]) {
+input:not(input[type=radio],
+input[type=file]),
+select {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
     border-radius: 6px;
@@ -111,6 +113,7 @@ input:not(input[type=radio],input[type=file]) {
     width: 100%;
     margin-top: 10px;
  }
+
  .radio {
     width: 100%;
     margin: 20px 0;
@@ -125,8 +128,10 @@ input:not(input[type=radio],input[type=file]) {
 
  }
 
- .form-2 input:hover, .form-1 input:hover,
- .form-2 input:active, .form-1 input:active {
+ .form-2 input:hover, 
+ .form-1 input:hover,
+ .form-2 input:active, 
+ .form-1 input:active {
     border: 1px solid #007BFF;
  }
  
@@ -135,6 +140,7 @@ input:not(input[type=radio],input[type=file]) {
  }
  footer {
     margin: 22px 0;
+    text-align: center;
  }
 
  hr {
@@ -147,6 +153,9 @@ input:not(input[type=radio],input[type=file]) {
     height: 38px;
     margin-left: 20px;
  }
+ /* .select-gray{
+    opacity: 0.5;
+ } */
  .delete {
     background: #FFFFFF;
     border: 1px solid #E4E4E4;
@@ -185,3 +194,6 @@ input:not(input[type=radio],input[type=file]) {
  .img-ava {
     border-radius: 50%;
  }
+ select:invalid { 
+    color: rgb(192, 192, 192); 
+}
