@@ -1,6 +1,188 @@
-h1 {
-    color:aquamarine;
-    div {
-        background-color: red;
-    }
+@use "reset";
+// $font-stack: 'Raleway', sans-serif;
+$primary-color: #FFCC00;
+
+body {
+    text-align: center;
+    margin: 5% 8%;
 }
+
+h1 {
+    color: $primary-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 66px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #898F8F;
+}
+
+.header-line {
+    display: inline-flex;
+    align-items: center;
+
+    img {
+        margin: 0 10px;
+    }
+        .header-line-l {
+            border: none;
+            border-top: 1px solid $primary-color;
+            color: $primary-color;
+            width: 210px;
+}
+}
+
+
+.section-slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+
+    .left {
+         padding: 50px;
+       img {
+            border: 0px solid $primary-color;
+            width: 100vh;
+            max-width: 400px;
+            position: relative;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+
+        }
+        .section-left-border-1 {
+            border: none;
+            box-sizing: border-box;
+            border-bottom: 1px solid $primary-color;
+            border-left: 1px solid $primary-color;
+            position: relative;
+            width: 100px ;
+            height: 100px;
+            top: -85px;
+            left: -15px;
+        }
+        .section-left-border-2 {
+            border: none;
+            box-sizing: border-box;
+            border-bottom: 1px solid $primary-color;
+            border-right: 1px solid $primary-color;
+            position: relative;
+            width: 100px ;
+            height: 100px;
+            top: -185px;
+            left: 315px; 
+        }
+
+        .section-left-border-3 {
+            border: none;
+            box-sizing: border-box;
+            border-top: 1px solid $primary-color;
+            border-left: 1px solid $primary-color;
+            position: relative;
+            width: 100px ;
+            height: 100px;
+            top: -615px;
+            left: -15px;
+        }        
+        .section-left-border-4 {
+            border: none;
+            box-sizing: border-box;
+            border-top: 1px solid $primary-color;
+            border-right: 1px solid $primary-color;
+            position: relative;
+            width: 100px ;
+            height: 100px;
+            bottom: 715px;
+            left: 315px;
+        }
+        
+    }
+    .section-slider-line {
+        border: none;
+        border-left: 1px solid $primary-color;
+        color: $primary-color;
+        width: 1px;
+        height: 560px;
+    }
+
+    .right {
+        padding: 50px;
+        width: 100vh;
+        max-width: 400px;
+        .info-name {
+            font-family: 'Roboto', sans-serif;
+            color: #666666;
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 42px;
+        }
+    
+        .info-position {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            color: #666666;
+        }
+
+        .social {
+            margin: 30px 0;
+        }
+        a:hover {
+            opacity: 0.5;
+        }
+        .section-right-line {
+            border: none;
+            border-top: 1px solid $primary-color;
+            width: 100px;
+            color: $primary-color;
+            display: inline-table;
+            margin: 30px 0;
+        }
+        .info-description {
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #333333;
+        } 
+        .section-right-line-dotted {
+            border: none;
+            border-top: 4px dashed $primary-color;
+            width: 60px;
+            color: $primary-color;
+            display: inline-table;
+            margin: 20px 0;
+        }
+        
+       .info-btn {
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 14px;
+            color: #666666;
+            background: #ffff;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border: 1px solid $primary-color;
+        }
+        .info-btn:hover {
+            opacity: 0.7;
+        }
+    }
+
+}
+
+
