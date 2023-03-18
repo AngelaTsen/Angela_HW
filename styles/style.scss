@@ -2,25 +2,39 @@
 // $font-stack: 'Raleway', sans-serif;
 $primary-color: #FFCC00;
 
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-raleway: 'Raleway', sans-serif;
+
+* {
+    transform: all .1s ease-in;
+}
+
+
+@mixin fonts($family, $size,$weight, $lHeight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lHeight;
+}
+
 body {
     text-align: center;
+    width: 100%;
+    max-width: 1170px;
     margin: 5% 8%;
 }
 
 h1 {
     color: $primary-color;
-    font-family: 'Roboto', sans-serif;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 66px;
+    @include fonts($font-family-roboto, 60px, 900, 66px);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
-        font-size: 18px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 24px;
     text-transform: uppercase;
