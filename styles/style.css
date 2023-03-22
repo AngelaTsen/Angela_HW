@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -345,176 +346,70 @@ textarea {
   transform: all 0.1s ease-in;
 }
 
-body {
-  text-align: center;
-  width: 100%;
-  max-width: 1170px;
-  margin: 5% 8%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: #FFCC00;
+html {
   font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  font-weight: 900;
-  line-height: 66px;
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
 }
 
-h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #898F8F;
+li {
+  list-style: none;
 }
 
-.header-line {
-  display: inline-flex;
-  align-items: center;
-}
-.header-line img {
-  margin: 0 10px;
-}
-.header-line .header-line-l {
-  border: none;
-  border-top: 1px solid #FFCC00;
-  color: #FFCC00;
-  width: 210px;
+a {
+  text-decoration: none;
 }
 
-.section-slider {
+header {
+  height: 60px;
+  border: 1px solid gray;
   display: flex;
   justify-content: space-between;
-  margin-top: 45px;
-}
-.section-slider .left {
-  padding: 50px;
-}
-.section-slider .left img {
-  border: 0px solid #FFCC00;
-  width: 100vh;
-  max-width: 400px;
+  align-items: center;
+  padding: 0 20px;
   position: relative;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
 }
-.section-slider .left .section-left-border-1 {
-  border: none;
-  box-sizing: border-box;
-  border-bottom: 1px solid #FFCC00;
-  border-left: 1px solid #FFCC00;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  top: -85px;
-  left: -15px;
+header .header__logo {
+  color: rgb(32, 112, 242);
+  font-weight: bold;
+  font-size: 20px;
 }
-.section-slider .left .section-left-border-2 {
-  border: none;
-  box-sizing: border-box;
-  border-bottom: 1px solid #FFCC00;
-  border-right: 1px solid #FFCC00;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  top: -185px;
-  left: 315px;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
 }
-.section-slider .left .section-left-border-3 {
-  border: none;
-  box-sizing: border-box;
-  border-top: 1px solid #FFCC00;
-  border-left: 1px solid #FFCC00;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  top: -615px;
-  left: -15px;
+.nav__item {
+  cursor: pointer;
 }
-.section-slider .left .section-left-border-4 {
-  border: none;
-  box-sizing: border-box;
-  border-top: 1px solid #FFCC00;
-  border-right: 1px solid #FFCC00;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  bottom: 715px;
-  left: 315px;
+.nav__item:not(:first-of-type) {
+  margin-left: 40px;
 }
-.section-slider .section-slider-line {
-  border: none;
-  border-left: 1px solid #FFCC00;
-  color: #FFCC00;
-  width: 1px;
-  height: 560px;
-}
-.section-slider .right {
-  padding: 50px;
-  width: 100vh;
-  max-width: 400px;
-}
-.section-slider .right .info-name {
-  font-family: "Roboto", sans-serif;
-  color: #666666;
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 42px;
-}
-.section-slider .right .info-position {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 36px;
-  color: #666666;
-}
-.section-slider .right .social {
-  margin: 30px 0;
-}
-.section-slider .right a:hover {
-  opacity: 0.5;
-}
-.section-slider .right .section-right-line {
-  border: none;
-  border-top: 1px solid #FFCC00;
-  width: 100px;
-  color: #FFCC00;
-  display: inline-table;
-  margin: 30px 0;
-}
-.section-slider .right .info-description {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #333333;
-}
-.section-slider .right .section-right-line-dotted {
-  border: none;
-  border-top: 4px dashed #FFCC00;
-  width: 60px;
-  color: #FFCC00;
-  display: inline-table;
-  margin: 20px 0;
-}
-.section-slider .right .info-btn {
+.nav__item__link {
+  color: #000;
+  font-weight: 600;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 14px;
-  color: #666666;
-  background: white;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  border: 1px solid #FFCC00;
 }
-.section-slider .right .info-btn:hover {
-  opacity: 0.7;
+.nav__item:hover .nav__item__link {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger__bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
