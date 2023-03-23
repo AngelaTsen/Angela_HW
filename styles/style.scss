@@ -88,14 +88,14 @@ header, main, .contacts-cont {
 
 header {
     display: flex;
+    // position: absolute;
     justify-content: space-between;
     align-items: center;
     height: 100px;
 
     @include md {
-        height: 210px;
+        height: 60px;
         justify-content: space-between;
-        align-items: start;
         margin-top: 10px;
         img {
             margin-left: 20px;
@@ -169,7 +169,13 @@ header {
     
         .nav-bar.active {
             visibility: visible;
-
+            position: absolute;
+            z-index: 2;
+            background-color: white;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            top: 100%;
         }
     
     .hamburger.active .header-hamburger-bar:nth-child(2) {
