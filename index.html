@@ -11,27 +11,31 @@
     <header>
         <img src="/image/Logo.svg" alt="logo">
         <nav>
-            <ul class="nav-bar">
+            <ul class="nav-bar ">
                 <li>
-                    <a href="#" >Home</a>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
                 <li>
-                    <a href="#" >About</a>
+                    <a href="#" class="nav-link">About</a>
                 </li>
                 <li>
-                    <a href="#" >works</a>
+                    <a href="#" class="nav-link">works</a>
                 </li>
                 <li>
-                    <a href="#blog" >blog</a>
+                    <a href="#blog" class="nav-link" >blog</a>
                 </li>
                 <li>
-                    <a href="#contacts" >Contacts</a>
+                    <a href="#contacts" class="nav-link" >Contacts</a>
                 </li>
             </ul>
         </nav>
         <div class="header-img">
             <img src="/image/search.svg" alt="search">
-            <img src="/image/hamburger.svg" alt="hamburger" class="hamburger">
+            <div class="hamburger">
+              <span class="header-hamburger-bar"></span>
+              <span class="header-hamburger-bar"></span>
+              <span class="header-hamburger-bar"></span>
+          </div>
         </div>
     </header>
     <section class="first-screen">
@@ -142,6 +146,27 @@
             </div>
             
         </section>
+        <script>
+          const hamburger = document.querySelector(".hamburger");
+          const navMenu = document.querySelector(".nav-bar");
+        
+        hamburger.addEventListener("click", mobileMenu);
+        
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        
+        
+        const navLink = document.querySelectorAll(".nav-link");
+        
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+        </script>
     </main>
     <footer id="contacts">
         <div class="contacts-cont">

@@ -708,10 +708,6 @@ header, main, .contacts-cont {
   }
 }
 
-.header-img img:type-of(2) {
-  margin-left: 15px;
-}
-
 .first-screen {
   width: 100%;
   min-width: 1440px;
@@ -783,15 +779,6 @@ header, main, .contacts-cont {
   }
 }
 
-.hamburger {
-  visibility: hidden;
-}
-@media (max-width: 768px) {
-  .hamburger {
-    visibility: visible;
-  }
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -800,8 +787,10 @@ header {
 }
 @media (max-width: 768px) {
   header {
-    height: 60px;
+    height: 210px;
     justify-content: space-between;
+    align-items: start;
+    margin-top: 10px;
   }
   header img {
     margin-left: 20px;
@@ -811,8 +800,12 @@ header .nav-bar {
   display: flex;
 }
 @media (max-width: 768px) {
-  header .nav-bar .nav-bar {
-    display: none;
+  header .nav-bar {
+    display: inline-block;
+    visibility: hidden;
+  }
+  header .nav-bar li {
+    margin: 20px;
   }
 }
 header .nav-bar li {
@@ -823,17 +816,51 @@ header .nav-bar li {
   line-height: 17px;
   letter-spacing: 0.3em;
   text-align: left;
-  margin-left: 42px;
+  margin-left: 14px;
 }
 header .nav-bar li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+  cursor: pointer;
+}
+header .nav-bar li a:hover {
+  text-decoration: underline;
+}
+header .header-img {
+  display: inline-flex;
+}
+header .hamburger {
+  visibility: hidden;
+  margin-left: 15px;
+  display: block;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
-  header .nav-bar {
-    display: none;
+  header .hamburger {
+    visibility: visible;
   }
+}
+header .header-hamburger-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+header .nav-bar.active {
+  visibility: visible;
+}
+header .hamburger.active .header-hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+header .hamburger.active .header-hamburger-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+header .hamburger.active .header-hamburger-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 #blog {
@@ -1286,3 +1313,5 @@ footer .h9 {
 .soc-hover:hover .hover-fill2 {
   fill: white;
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -91,26 +91,26 @@
     },
     "\/image\/image-1.jpg" : {
       "ft" : 16384,
-      "iS" : 57380,
+      "iS" : 85007,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/image\/image-1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/image\/image-2.jpg" : {
       "ft" : 16384,
-      "iS" : 173408,
+      "iS" : 81600,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/image\/image-2.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -301,6 +301,14 @@
       "oAP" : "\/styles\/style-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/styles\/style.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/style.css.map",
+      "oF" : 0
     },
     "\/styles\/style.scss" : {
       "aP" : 0,
