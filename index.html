@@ -8,31 +8,45 @@
     <title>Document</title>
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-        <a href="#" class="nav-logo">WebDev.</a>
-        <ul class="nav-menu">
-            <li class="nav-item">
+  <header class="wraper">
+    <nav>
+        <!-- <a href="#" class="nav-logo">WebDev.</a> -->
+        <ul  class="nav-bar">
+            <li class="nav-li"> 
+                <a href="#" class="nav-link">Works</a>
+            </li>
+            <li class="nav-li">
                 <a href="#" class="nav-link">Services</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+            <li class="nav-li">
+                <a href="#" class="nav-link">Contacts</a>
             </li>
         </ul>
         <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
         </div>
     </nav>
 </header>
-<script>
+<main class="wraper">
+    <h1>Patagonia</h1>
+    <p>
+        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.
+    </p>
+    <!-- <img src="/image/Bitmap-2.png" srcset="/image/Bitmap-1.png 2px, /image/Bitmap.png 3px" alt="Bitmap"> -->
+    
+    <picture>
+        <source media="(max-width: 768px)" srcset="/image/Bitmap-1.png">
+        <source media="(max-width: 320px)" srcset="/image/Bitmap.png">
+        <img src="/image/Bitmap-2.png" alt="Bitmap">
+    </picture>
+
+
+
+</main>
+
+<!-- <script>
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
 
@@ -52,6 +66,6 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-</script>
+</script> -->
 </body>
 </html>

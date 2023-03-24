@@ -30,6 +30,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/image\/Bitmap-1.png" : {
+      "ft" : 32768,
+      "iS" : 479578,
+      "oA" : 0,
+      "oAP" : "\/image\/Bitmap-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/image\/Bitmap-2.png" : {
+      "ft" : 32768,
+      "iS" : 451966,
+      "oA" : 0,
+      "oAP" : "\/image\/Bitmap-2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/image\/Bitmap.png" : {
+      "ft" : 32768,
+      "iS" : 134278,
+      "oA" : 0,
+      "oAP" : "\/image\/Bitmap.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -110,6 +149,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/styles\/style.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/style.css.map",
+      "oF" : 0
+    },
     "\/styles\/style.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -117,7 +164,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/styles\/style.css",
       "oF" : 0,
