@@ -1,172 +1,268 @@
+@use "reset";
 @import "./reset";
 @import "./variables";
 @import "./mixins";
 @import "./responsive";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+    transform: all .1s ease-in;
+}
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
+header, main, .contacts-cont {
+    font-family: 'Lato', sans-serif;
     width: 100%;
+    max-width: 1170px;
+    margin: 0 8%;
+
+    @include md {
+        margin: 0 4%;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    @include ssm {
+        margin: 0 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5em;
+    text-align: left;
+    padding-top: 40px;
+    
 }
 
 header {
-    display: inline;
-    justify-content: end;
+    display: inline-flex;
     align-items: center;
-    height: 100px;
-    width: 100%;
+    height: 70px;
 
     @include md {
-        height: 80px;
-    }
-       
-     @include ssm {
         height: 60px;
-        .nav-bar {
-            display: none;
-         }
     }
-        
+    @include ssm {
+        height: 50px;
+    }
+
 }
 
-.nav-bar {
-    display: inline-flex;
-    justify-content: end;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
 
-    li {
-    list-style: none;
-    padding-left: 30px ;
-
-        a {
-             text-decoration: none;
-             color: #242635;
-        }
-        .nav-link:hover{
-            opacity: 0.7;
-        }
-    }
-}
-main {
 
     h1 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 90px;
-        font-weight: 500;
-        line-height: 102px;
-        letter-spacing: -2px;
+        @include fonts ($font-family-rhd, 48px, 600, 64px, black);
+        letter-spacing: 0.05em;
+        text-align: left;
+        padding: 30px 0 60px 0;
 
         @include md {
-            font-size: 72px;
-            font-weight: 500;
-            line-height: 83px;
-            letter-spacing: -1.600000023841858px;
+            @include fonts ($font-family-rhd, 33px, 600, 50px, black);
+            padding: 50px 0 50px 0;
         }
 
         @include ssm {
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 40px;
-            letter-spacing: -0.800000011920929px;
-
+            @include fonts ($font-family-rhd, 30px, 600, 50px, black);
+            padding: 8px 0 40px 0;
         }
-    }
-    p {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 33px;   
-        padding: 0 30%; 
-       
-        @include md {
-            padding: 0 10%; 
-        }
-         @include ssm {
-            padding: 0 5%; 
-            font-family: Source Sans Pro;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px;
 
-        }
-    
-
-    } 
-    img {
-        text-align: center;
-        width: 100%;
-    } 
 }
 
-
-.hamburger {
-    display: none;
+h6 {
+    @include fonts ($font-family-lato, 16px, 400, 27px, $color-second);
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
 
     @include ssm {
-        display: flex;
-        flex-direction: row-reverse;  
-        padding: 60px;
+        margin-top: 30px;
+    }
+}
+
+h2 {
+    @include fonts ($font-family-rhd, 28px, 600, 46px, black);
+    letter-spacing: 0.1em;
+    padding: 70px 0 40px 0;
+    
+    @include ssm {
+        @include fonts ($font-family-rhd, 25px, 600, 43px, black);
+    }
+}
+.h9 {
+    @include fonts ($font-family-lato, 12px, 400, 20px, $color-second);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+    @include ssm {
+        @include fonts ($font-family-lato, 16px, 400, 26px, $color-second);
+    }
+}
+
+p {
+    @include fonts ($font-family-lato, 19px, 400, 32px, black);
+    letter-spacing: 0.05em;
+    
+    @include ssm {
+        @include fonts ($font-family-lato, 16px, 400, 32px, black);
+    }
+}
+
+.info-btn {
+    width: 180px;
+    height: 46px;
+    background-color: $color-btn;
+    display: inline;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    margin: 54px 0 90px 0;
+    
+   } 
+   .info-btn:hover  {
+    opacity: 0.8;
+   }
+    .info-item-btn {
+       text-align: center;  
+    }
+   
+.info-item {
+    display: flex;
+   
+    @include md {
+        display: inline;
+    }
+    
+        h3 {
+            @include fonts ($font-family-rhd, 23px, 300, 38px, black);
+            width: 60%;
+
+            @include md {
+                width: 100%;
+            }
+            .arrow {
+                color: $color-second;
+                font-size: 1em;
+            }
+        }
+        h4 {
+            width: 40%;
+            @include md {
+                width: 85%;
+                text-align: right;
+                padding-left: 70px;
+            }
+
+            @include ssm {
+                width: 100%;
+                padding-left: 0;
+                text-align: left;
+            }
+        }
+}
+
+footer {
+    background-color: #F4F4F4;
+    margin-top: 90px ;
+    padding-bottom: 30px;
+
+    @include md {
+
+    }
+
+    .contacts-cont {
+        padding-top: 70px;
+
+        @include md {
+        padding-top: 50px;
+        }
+        
+        .footer-contacts-cont {
+            display: inline-flex;
+            justify-content: space-between;
+            align-content: center;
+            width: 100%;
+    
+            @include md{
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        h1 {
+            @include fonts ($font-family-rhd, 48px, 400, 64px, black);
+            letter-spacing: 0.05em;
+            margin-bottom: 30px;
+
+            @include md {
+                margin-bottom: 20px;
+                text-align: center
+            }
+            @include ssm {
+                @include fonts ($font-family-rhd, 32px, 400, 42px, black);
+                letter-spacing: 0.05em;
+                margin-bottom: 30px;
+                text-align: center;
+                }
+
+        }
+
+        svg {
+            margin-left: 20px;
+            margin-bottom: 30px;
+
+
+            @include md {
+                margin-top: 50px;
+            }
+        }
+        h6 {
+            margin: 15px 0 0 0;
+
+            @include ssm {
+                color: black;
+            }
+        }
+    }
+
+    .footer-contacts-cont {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+
+        @include md{
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .h9 {
+        text-align: center;
+        margin-top: 25px;
+        @include ssm {
+                 @include fonts ($font-family-lato, 16px, 400, 26px, black);
+ 
+        }
+
     }
 
 
-.hamburger-bar {
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    margin: 2px ;
-    text-align: right;
-    // -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
+.soc-hover {
+    .hover-fill {
+        fill: #F4F4F4;
+       }
+       .hover-fill2 {
+        fill: #565656;
+       }
+   }   
+
+   .soc-hover:hover {
+    .hover-fill {
+        fill: #565656;
+       }
+       .hover-fill2 {
+        fill: white;
+       }
+   }
+
 }
-}
-
-
-
-
-// @include md {
-//     .nav-menu {
-//         position: fixed;
-//         left: -100%;
-//         top: 5rem;
-//         flex-direction: column;
-//         background-color: #fff;
-//         width: 100%;
-//         border-radius: 10px;
-//         text-align: center;
-//         transition: 0.3s;
-//         box-shadow:
-//             0 10px 27px rgba(0, 0, 0, 0.05);
-//     }
-
-    // .nav-menu.active {
-    //     left: 0;
-    // }
-
-    // .nav-li {
-    //     margin: 2.5rem 0;
-    // }
-
-   
-    // .hamburger {
-    //     display: block;
-    //     cursor: pointer;
-    // }
-
-// .hamburger.active .hamburger-bar:nth-child(2) {
-//     opacity: 0;
-// }
-
-// .hamburger.active .hamburger-bar:nth-child(1) {
-//     transform: translateY(8px) rotate(45deg);
-// }
-
-// .hamburger.active .hamburger-bar:nth-child(3) {
-//     transform: translateY(-8px) rotate(-45deg);
-// }
-
