@@ -17,57 +17,191 @@
       "oAP" : "\/build\/.gitignore",
       "oF" : 0
     },
-    "\/image\/ava.jpg" : {
+    "\/image\/arrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/arrow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/avatar-1.jpg" : {
       "ft" : 16384,
-      "iS" : 119343,
+      "iS" : 6936,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/image\/ava.jpg",
+      "oAP" : "\/image\/avatar-1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/image\/Bitmap-1.png" : {
-      "ft" : 32768,
-      "iS" : 479578,
+    "\/image\/avatar-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 16200,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/image\/Bitmap-1.png",
+      "oAP" : "\/image\/avatar-2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "oT" : 1,
       "ou" : "lpckwebp-none",
-      "q" : 90,
+      "q" : 100,
       "rq" : 75
     },
-    "\/image\/Bitmap-2.png" : {
-      "ft" : 32768,
-      "iS" : 451966,
-      "oA" : 0,
-      "oAP" : "\/image\/Bitmap-2.png",
+    "\/image\/bank-image.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/bank-image.svg",
       "oF" : 0,
-      "oIPL" : 0,
       "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
+      "plM" : 52780316221407,
+      "prP" : 0
     },
-    "\/image\/Bitmap.png" : {
-      "ft" : 32768,
-      "iS" : 134278,
-      "oA" : 0,
-      "oAP" : "\/image\/Bitmap.png",
+    "\/image\/bg-1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/bg-1.svg",
       "oF" : 0,
-      "oIPL" : 0,
       "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/bg-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/bg-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/bg-3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/bg-3.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/bg-4.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/bg-4.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/bg-tes.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/bg-tes.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/f.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/f.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/features-1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/features-1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/features-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/features-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/features-3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/features-3.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/features-4.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/features-4.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/first-screen-img.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/first-screen-img.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/i.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/i.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/Logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/Logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/image\/t.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/image\/t.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/index.html" : {
       "cB" : 0,
@@ -77,7 +211,7 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
-    "\/styles\/_mixins.scss" : {
+    "\/style\/_mixins.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -86,13 +220,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/styles\/_mixins.css",
+      "oAP" : "\/style\/_mixins.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/styles\/_reset.scss" : {
+    "\/style\/_reset.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -101,13 +235,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/styles\/_reset.css",
+      "oAP" : "\/style\/_reset.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/styles\/_responsive.scss" : {
+    "\/style\/_responsive.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -116,13 +250,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/styles\/_responsive.css",
+      "oAP" : "\/style\/_responsive.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/styles\/_variables.scss" : {
+    "\/style\/_variables.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -131,13 +265,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/styles\/_variables.css",
+      "oAP" : "\/style\/_variables.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/styles\/style.css" : {
+    "\/style\/style.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -145,19 +279,19 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/styles\/style-min.css",
+      "oAP" : "\/style\/style-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/styles\/style.css.map" : {
+    "\/style\/style.css.map" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/styles\/style.css.map",
+      "oAP" : "\/style\/style.css.map",
       "oF" : 0
     },
-    "\/styles\/style.scss" : {
+    "\/style\/style.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -166,7 +300,7 @@
       "ft" : 4,
       "ma" : 1,
       "oA" : 0,
-      "oAP" : "\/styles\/style.css",
+      "oAP" : "\/style\/style.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

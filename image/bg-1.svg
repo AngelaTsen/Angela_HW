@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F0FAF9;}
+	.st1{clip-path:url(#SVGID_00000051385248222219305190000012517712554861829019_);}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:1.5;}
+</style>
+<path class="st0" d="M50,0h300c27.6,0,50,22.4,50,50v300c0,27.6-22.4,50-50,50H50c-27.6,0-50-22.4-50-50V50C0,22.4,22.4,0,50,0z"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="158.3" y="29.5" width="195" height="140"/>
+	</defs>
+	<clipPath id="SVGID_00000020392548938748541940000009445378278845219498_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000020392548938748541940000009445378278845219498_);">
+		<path class="st2" d="M342.9,109.6c26,29.4-4.7,57.9-58.6,58.6C177,161.2,152.8,66.2,160.9,44.9c8.1-21.3,32.2-21.9,68,21.5
+			C264.6,109.8,310.4,72.8,342.9,109.6z"/>
+		<ellipse transform="matrix(0.3538 -0.9353 0.9353 0.3538 82.2143 286.7643)" class="st2" cx="248.6" cy="83.9" rx="10" ry="17"/>
+	</g>
+</g>
+</svg>
