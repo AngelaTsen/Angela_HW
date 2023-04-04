@@ -32,12 +32,11 @@
     -moz-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.2);
     font-family: $font-m;
- 
-    @include md {
-        width: 120px;
-        text-align: left;
-        padding-left: 20px;
-    }
+    // @include md {
+    //     width: 120px;
+    //     text-align: left;
+    //     padding-left: 20px;}
+    
 }
 
 @mixin btn-pink {

@@ -7,28 +7,39 @@
 	max-width: 1170px;
 	margin: 0 auto;
     padding: 0 20px;
-	// @include xl {
-	// 	max-width: 1000px;
-	// }
-	// @include lg {
-	// 	max-width: 800px;
-	// }
-	// @include md {
-	// 	max-width: 700px;
-	// }
-	// @include sm {
-	// 	max-width: 500px;
-	// }
-	// @media ssm {
-	//     max-width: 300px;
-	// }
+
+	@include xl {
+		max-width: 1000px;
+	}
+	@include xl {
+		max-width: 1000px;
+	}
+	@include lg {
+		max-width: 800px;
+	}
+	@include md {
+		max-width: 700px;
+	}
+	@include sm {
+		max-width: 500px;
+	}
+    @include ssm {
+		max-width: 300px;
+	}
 }
 
 .h2 {
     @include fonts($font-ws,40px,700, 52px, $color-violet-dark);  
+    @include md {
+        @include fonts($font-ws,30px,700, 38px, $color-violet-dark);  
+    }
 }
 .p {
     @include fonts($font-m,18px,500, 29px, $color-gray-dark);  
+    @include md {
+        @include fonts($font-m,15px,500, 23px, $color-gray-dark);  
+
+    }
 }
 .p-small {
     @include fonts($font-m,16px,400, 26px, $color-gray-dark);  
@@ -70,12 +81,10 @@ header {
                 @include xl {
                     padding-left: 40px ;  
                 }
-            &__link:hover {
-                    color: $color-violet-middle;
-                        }
          }
-
-        
+         &__link:hover {
+            color: $color-violet-middle;
+                }
         li{
             list-style: none;
             @include lg {
@@ -85,9 +94,13 @@ header {
                 margin-bottom: 15px;           
              }
         }
+        }
     }
+    .btn-conteiner {
+        @include md {
+            display: none;
+        }
     }
-  
 
 .hamburger {
         display: none;
@@ -121,7 +134,14 @@ header {
     z-index: 8;
     background-color: white;
     left: 0;
-    top: 130px;
+    top: 130px; 
+    width: 100%;
+        
+        &__link {
+            width: 100%;
+            background-color: white;
+
+        }
     @include md {
         display: block;
     }
@@ -148,6 +168,8 @@ header {
 .btn-conteiner{
     position: relative;
     top: 0;
+    
+    }
       .btn {
     @include btn-arrow; 
     
@@ -177,7 +199,6 @@ header {
             }
         }
     }
-}
 .fs {
     background: content-box;
     background-image: url(/image/first-screen-img.svg);
@@ -194,14 +215,13 @@ header {
         height: 600px;
     }
     @include lg {
-        height: 520px;
+        height: 550px;
     }
     @include md {
-        height: 720px;
+        height: 470px;
+        background: none;
     }
-    @include sm {
-        height: 600px;
-    }
+  
 
     
     &__title {
@@ -216,78 +236,50 @@ header {
         }
 
         @include md {
-            @include fonts($font-ws,60px,700, 70px, $color-violet-dark);
+            @include fonts($font-ws,60px,700, 58px, $color-violet-dark);
+            width: 75%;
             }
         @include sm {
-            @include fonts($font-ws,45px,700, 55px, $color-violet-dark);
+            @include fonts($font-ws,55px,700, 58px, $color-violet-dark);
+            width: 90%;
             }
         @include ssm {
-            @include fonts($font-ws,40px,700, 45px,$color-violet-dark);
+            @include fonts($font-ws,45px,700, 45px,$color-violet-dark);
+            width: 100%;
 
         }    
     }
-    // &__img {
-    //     width: 70%;
-    //     position: absolute;
-    //     top: 27%;
-    //     left: 25%;
-    //     z-index: 1;
-
-    //     @include xl {
-    //         top: 22%;
-    //         width: 60%;
-    //         left: 35%;
-    //         }
-    //     @include lg {
-    //         top: 22%;
-    //     }
-    //     @include md {
-    //         position: relative;
-    //         top: 0;
-    //         left: 0;
-    //     }
-    //     @include sm {
-    //         position: relative;
-    //         top: 0;
-    //         left: 0;
-
-    //      }
-    // }
+   
     &__text {
         position: relative;
         z-index: 3;
         margin-top: 50px; 
-        width: 370px;
+        width: 38%;
 
-        // @include xl {
-        //     width: 30%;
-        // }
-        // @include lg {
-        //     width: 35%;
-        // }
-        // @include md {
-        //     width: 75%;
-        // }
-        // @include sm {
-        //     width: 90%;
-        // }
-        // @include ssm {
-        //     width: 95%;
-        // }
+       
+        @include lg {
+            width: 55%;
+        }
+        @include md {
+            width: 95%;
+        }
+       
 
     }
     &__btn {
         @include btn-violet;
         margin-top: 50px;
+        @include sm {
+            margin-top: 30px;
+            margin-left: 15px;
+
+        }
     }
     &__btn:hover {
         background-color: $color-violet-middle;
     }
 
-    .fs__title {
-        @include fonts($font-m,80px,700, 88px, $color-violet-dark);
-        line-height: 110%;
-    }
+   
 }
 
 footer {
@@ -313,9 +305,20 @@ footer {
         @include md{
             display: block;
         }
-
+        &__try {
+            @include ssm {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
         &__btn{
             display: inline-flex;
+
+                @include ssm {
+                    display: grid;
+                     gap: 30px;
+                     margin: 0 20px;
+                }
         }
 
         .btn-learn{
@@ -335,6 +338,10 @@ footer {
     .fmain {
         display: flex;
         justify-content: space-between;
+
+            @include ssm {
+                display: inline;
+            }
         
         &__blok {
             display: flex;
@@ -348,6 +355,13 @@ footer {
                 position: relative;
                 bottom: 9px;
                 left: 15px;
+
+                 @include md {
+                    @include fonts($font-m, 16px,600, 26px, $color-violet-dark);
+                }
+                @include ssm {
+                    @include fonts($font-m, 20px,600, 26px, $color-violet-dark);
+                }
                 }
             }
                 &__info {
@@ -356,33 +370,93 @@ footer {
                     text-decoration: none;
                     margin-bottom: 15px;
                 }
+                a:hover {
+                    opacity: 0.7;
+                }
                 } 
         }
-        .fmain__nav {
-         list-style-type: none;
+
+        &__nav {
+            display: inline-flex;
+            margin-top: 0px;
+            gap: 110px;
+
+            @include lg {
+                gap: 90px;
+            }
+            @include md {
+                gap: 35px;
+            }
+            @include ssm {
+            padding-left: 0;
+            }
+
+            &-ul:nth-child(1) {
+                @include ssm {
+                    padding-left: 0px;
+                }
+            }
+
+            li {
+                list-style-type: none;
+            }     
 
             &-subtitle {
                 @include fonts($font-m, 16px,600, 26px, $color-violet-dark);
                 margin-bottom: 30px;
+                margin-top: 0;
             }
-        
+            
             &-link  {
-            color: $color-gray-dark;    
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
+                color: $color-gray-dark;    
+                text-decoration: none;
+                display: block;
+                margin-bottom: 10px;
             }
+                
             &-link:hover {
-                color: $color-violet;
-            } 
+                    color: $color-violet;
+                } 
         }
+       
         &__socialmed {
+
+            @include md {
+                display: grid;
+            }
+            @include ssm {
+                display: inline-block;
+            }
+
+
             .fmain__subtitle {
                 @include fonts($font-m, 16px,600, 26px, $color-violet-dark);
                 margin-bottom: 30px;
+
+                    @include md {
+                        padding-left: 40px;
+                        margin-bottom: -25px;
+                    }
+                    @include ssm {
+                        text-align: center;
+                        padding-left: 0px;
+
+                        margin-bottom: 15px;
+
+                    }
             }
+         
             svg {
-                margin-right: 15px;  }
+                margin-right: 15px;  
+            
+                @include md {
+                    margin-left: 60px;
+                }
+                @include sm {
+                    margin-left: 15px;
+                }
+              
+            }
         }
     }
    
@@ -403,49 +477,95 @@ footer {
     border-radius: 50px;   
     padding: 70px;
     margin-top: 100px;
+    
+    @include md {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+
     &__item {
             display: inline-flex;
+            @include lg {
+                display: inline;
+                margin-top: 0px;
+            }
+                
               
             &__img {
                     max-width: 400px;
 		            max-height: 410px;
+                    @include lg {
+                        max-width: 50%;
+                        margin-left: 25%;
+                    }
+                    @include md {
+                        display: none;
+                    }
                 }
             &__text {
                 padding: 50px 0 40px 130px;
-            }
+                
+                @include md {
+                     text-align: center;
+                    padding: 40px;
+                }
+                @include sm { 
+                    padding: 5px;
+            }}
         }
-}
+  } 
 
 .features-s {
     position: relative;
     right: 40px;
     margin-bottom: 100px;
+   
     &__text  {
-        margin: 70px 0 50px 0;
+        margin: 70px auto 50px 90px;
         text-align: center;
         max-width: 1170px; 
+
+        @include ssm {
+            margin: 50px auto 50px 30px;
+        }
        
     }
-.feachures {
+    .feachures {
     &__block{
         width: 530px;
-        height: 400px;  
+        height: 450px;  
         display: inline-flex;  
         margin-right: 30px;
-    margin-bottom: 50px;  
-    }
+        margin-bottom: 50px;  
+         
+        @include md {
+        padding: 0 20px; 
+        margin: 0px;
+         }
+         @include ssm {
+        width: 300px;
+        background-size: 100% auto;
+
+         }
+     }
 
     &__image{
         width: 230px;
         height: 180px;    
         position: absolute;
         z-index: 2;
+        
+            @include sm {
+                display: none;
+            }
+
         img{
             margin-top: 50%;
             margin-left: 20%;
-        }
-        @include sm {
-           display: none;
+            @include sm {
+                display: none;
+            }
         }
     }
 
@@ -457,23 +577,36 @@ footer {
         position: relative;
         right: -200px;
         padding:45px 85px;
+
         @include sm {
-            right: -100px;
+            width: 300px;
+            padding: 20px; 
+             }
+        @include sm {
+            right: 0px;
+            margin: 0px 20px;
         }
         .title{
             @include fonts ($font-ws, 24px, 400, 31px, $color-violet-dark);
         }
         &-1{
-            background: url("/image/bg-1.svg");
+            background: url("/image/bg-1.svg") no-repeat;
+            background-size: cover;
         }
         &-2{
-            background: url("/image/bg-2.svg");
+            background: url("/image/bg-2.svg") no-repeat;
+            background-size: cover;
+
         }
         &-3{
-            background: url("/image/bg-3.svg");
+            background: url("/image/bg-3.svg") no-repeat;
+            background-size: cover;
+
         }
         &-4{
-            background: url("/image/bg-4.svg");
+            background: url("/image/bg-4.svg") no-repeat;
+            background-size: cover;
+
         }
         &__btn{
             @include fonts ($font-m, 16px, 700, 26px, $color-violet-dark);
@@ -487,18 +620,37 @@ footer {
 }
 
 .testimonials {
-    display: grid;
+    display: block;
 	justify-content: center; 
     border: none;
     border-radius: 50px;  
     background: url(/image/bg-tes.svg) no-repeat; 
     background-size: cover;
     padding: 80px 20px;
+
+    @include md  {
+        border-radius: 70px;
+        padding: 17px 15px;
+  
+    }
+    
+    @include sm {
+        border-radius: 20px;  
+        padding: 20px;
+        background: none;
+        background-color: #ccddff;
+
+         
+    }
     
       
     &__item {
         display: flex;
         justify-content: space-between;
+
+        @include md {
+           display: inline-block;
+        }
 
         &__profile {
             display: flex;
@@ -507,6 +659,18 @@ footer {
             margin: 25px 40px;
             padding: 30px 35px;
             border: 1px solid $color-violet;
+
+            @include lg {
+           display: inline-block;
+            }
+            @include lg {
+                margin: 10px;
+                padding: 12px;
+                text-align: center;
+    
+                 }
+
+
              &-img {
                 border-radius: 50%;
                 height: 90px;
@@ -522,6 +686,9 @@ footer {
                            margin: 0;
   
                         }
+                   @include ssm {
+                    margin-left: 0px;
+                   }     
              }
         }
     }
