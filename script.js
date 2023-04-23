@@ -222,29 +222,81 @@
 
 
 
-const obj = {
-    goods: "чашка",
-    color: "жовта",
-    volume : "500мл",
-    info : function() {
-        return this.goods + " " + this.color + " об'ємом на " + this.volume ;
-    }
-  };
+// const obj = {
+//     goods: "чашка",
+//     color: "жовта",
+//     volume : "500мл",
+//     info : function() {
+//         return this.goods + " " + this.color + " об'ємом на " + this.volume ;
+//     }
+//   };
 
-  const infoObj = {
-    manufacturer: "BergHOFF",
-    contry: "Германія",
-    city : "Гамбугр",
-    info1 : function() {
-        return this.manufacturer + " " + this.contry ;
-    }
-    };
+//   const infoObj = {
+//     manufacturer: "BergHOFF",
+//     contry: "Германія",
+//     city : "Гамбугр",
+//     info1 : function() {
+//         return this.manufacturer + " " + this.contry ;
+//     }
+//     };
 
-  const fullinfo = {...obj,...infoObj};
+//   const fullinfo = {...obj,...infoObj};
 
-  console.log (obj.info());
-  fullinfo.info()
+//   console.log (obj.info());
+//   fullinfo.info()
 
-  console.log (fullinfo);
+//   console.log (fullinfo);
+
+// const date = new Date('April 1, 2023 15:00:00');
+// const utc = date.toUTCString();
+// const monthNames = ["Січеня", "Лютого", "Березеня", "Квітеня", "Травеня", "Червеня",
+//   "Ліпеня", "Серпеня", "Вересеня", "Жовтеня", "Лістопада", "Груденя"];
+
+// const m = new Date();
+
+// const dayNames = ["Понедіок", "Вівторок", "Середа", "Четвер", "Пятниця", "Субота",
+//   "Неділя"];
+
+// const d = new Date();
+
+// console.log (`${(date.getDate()<10?'0' + date.getDate():'')} ${monthNames[m.getMonth()]} ${date.getFullYear()} ${date.getHours()}:${(date.getMinutes()<10?'0':'') + date.getMinutes() } (${dayNames[d.getDay()]})`)
 
 
+
+// let array = [12, 'sgg', 'hhhhh', true, 23, 56];
+// function arrayX () {
+//     array.forEach(element => console.log(element));   
+// }
+// arrayX();
+
+
+// let n = [12, 1, 23, 56];
+// let sum = (array) => n.reduce((total, value) => total + value,0);
+// console.log(sum(n));
+
+// // ввіводіть мах число
+// let n = [12, 1, 23, 56];
+// const res = (n) => n.reduce((max, item) => max < item ? item : max);
+// console.log (res(n));
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const res = (array, index, ...element) => array.splice(index, 0, ...element);
+// res(fruits,0,"Lemon", "Kiwi");
+// console.log (fruits);
+
+// // додавання елементів до масіву
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const res = (array, index) => array.splice(index,1);
+// res(fruits,1);
+// console.log (fruits);
+
+
+const m1 = ["Banana", "Orange", "Apple", "Mango"];
+const m2 = ["Banana", "Lemon", "Kiwi"];
+const m = m1.concat(m2);
+uniq = a.filter( (item, pos, arr) => !pos || item !== arr[pos - 1] );
+
+// const uniq = Array.from(new Set(m));
+
+console.log (uniq)
