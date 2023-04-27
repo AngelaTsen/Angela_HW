@@ -5,8 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -74,7 +72,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -313,119 +312,87 @@ template {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  text-align: center;
-  width: 100%;
-}
-
-header {
-  display: inline;
-  justify-content: end;
+.traffic-light {
+  width: 150px;
+  height: 400px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.traffic-light .light {
+  width: 100px;
   height: 100px;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  header {
-    height: 80px;
-  }
-}
-@media (max-width: 320px) {
-  header {
-    height: 60px;
-  }
-  header .nav-bar {
-    display: none;
-  }
-}
-
-.nav-bar {
-  display: inline-flex;
-  justify-content: end;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-}
-.nav-bar li {
-  list-style: none;
-  padding-left: 30px;
-}
-.nav-bar li a {
-  text-decoration: none;
-  color: #242635;
-}
-.nav-bar li .nav-link:hover {
-  opacity: 0.7;
-}
-
-main h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 90px;
-  font-weight: 500;
-  line-height: 102px;
-  letter-spacing: -2px;
-}
-@media (max-width: 768px) {
-  main h1 {
-    font-size: 72px;
-    font-weight: 500;
-    line-height: 83px;
-    letter-spacing: -1.6000000238px;
-  }
-}
-@media (max-width: 320px) {
-  main h1 {
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.8000000119px;
-  }
-}
-main p {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 33px;
-  padding: 0 30%;
-}
-@media (max-width: 768px) {
-  main p {
-    padding: 0 10%;
-  }
-}
-@media (max-width: 320px) {
-  main p {
-    padding: 0 5%;
-    font-family: Source Sans Pro;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-  }
-}
-main img {
-  text-align: center;
-  width: 100%;
-}
-
-.hamburger {
-  display: none;
-}
-@media (max-width: 320px) {
-  .hamburger {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 60px;
-  }
-}
-.hamburger .hamburger-bar {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
   border-radius: 50%;
-  margin: 2px;
-  text-align: right;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
 }
 
-/*# sourceMappingURL=style.css.map */
+.red.active {
+  background-color: red;
+}
+
+.yellow.active {
+  background-color: yellow;
+}
+
+.green.active {
+  background-color: green;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  margin: 20px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.modal-bg {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #f3f3f3;
+  margin: 15% auto;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 30px;
+}
+
+.closeX {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closeX:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

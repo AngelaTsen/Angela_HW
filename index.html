@@ -1,72 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css"> 
     <title>Document</title>
 </head>
 <body>
     <script defer src="/script.js"></script>
-  <!-- <header class="wraper">
-    <nav>
-        <a href="#" class="nav-logo">WebDev.</a> -->
-        <!-- <ul  class="nav-bar">
-            <li class="nav-li"> 
-                <a href="#" class="nav-link">Works</a>
-            </li>
-            <li class="nav-li">
-                <a href="#" class="nav-link">Services</a>
-            </li>
-            <li class="nav-li">
-                <a href="#" class="nav-link">Contacts</a>
-            </li>
-        </ul>
-        <div class="hamburger">
-            <span class="hamburger-bar"></span>
-            <span class="hamburger-bar"></span>
-            <span class="hamburger-bar"></span>
-        </div>
-    </nav>
-</header>
-<main class="wraper">
-    <h1>Patagonia</h1>
-    <p>
-        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.
-    </p> --> 
-    <!-- <img src="/image/Bitmap-2.png" srcset="/image/Bitmap-1.png 2px, /image/Bitmap.png 3px" alt="Bitmap"> -->
-    
-    <!-- <picture>
-        <source media="(max-width: 768px)" srcset="/image/Bitmap-1.png">
-        <source media="(max-width: 320px)" srcset="/image/Bitmap.png">
-        <img src="/image/Bitmap-2.png" alt="Bitmap">
-    </picture>
 
+<!-- список пісень -->
 
+<ul class="song-list"></ul>
 
-</main> -->
+<!-- світлофор-->
 
-<!-- <script>
-  const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav-menu");
+  <div class="traffic-light">
+    <div class="light red active"></div>
+    <div class="light yellow active"></div>
+    <div class="light green active"></div>
+  </div>
+  <button class="button" onclick="changeLight()">ПЕРЕМКНУТИ</button>
 
-hamburger.addEventListener("click", mobileMenu);
+ <!-- Модальне вікно -->
+  
+  <button class="button" onclick="openModal()">ВІДКРИТИ</button>
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
+  <div id="myModal" class="modal-bg">
+    <div class="modal-content">
+      <span class="closeX" onclick="closeModal()">&times;</span>
+      <h2>Привіт, це модальне вікно!</h2>
+      <p>А це текст модального вікна Бла бла бла</p>
+      <button class="button" onclick="closeModal()">ЗАКРИТИ</button>
+    </div>
+  </div>
 
-
-    const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
-</script> -->
 </body>
 </html>

@@ -3,170 +3,89 @@
 @import "./mixins";
 @import "./responsive";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    width: 100%;
-}
-
-header {
-    display: inline;
-    justify-content: end;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-
-    @include md {
-        height: 80px;
-    }
-       
-     @include ssm {
-        height: 60px;
-        .nav-bar {
-            display: none;
-         }
-    }
-        
-}
-
-.nav-bar {
-    display: inline-flex;
-    justify-content: end;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-
-    li {
-    list-style: none;
-    padding-left: 30px ;
-
-        a {
-             text-decoration: none;
-             color: #242635;
-        }
-        .nav-link:hover{
-            opacity: 0.7;
-        }
-    }
-}
-main {
-
-    h1 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 90px;
-        font-weight: 500;
-        line-height: 102px;
-        letter-spacing: -2px;
-
-        @include md {
-            font-size: 72px;
-            font-weight: 500;
-            line-height: 83px;
-            letter-spacing: -1.600000023841858px;
-        }
-
-        @include ssm {
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 40px;
-            letter-spacing: -0.800000011920929px;
-
-        }
-    }
-    p {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 33px;   
-        padding: 0 30%; 
-       
-        @include md {
-            padding: 0 10%; 
-        }
-         @include ssm {
-            padding: 0 5%; 
-            font-family: Source Sans Pro;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px;
-
-        }
-    
-
-    } 
-    img {
-        text-align: center;
-        width: 100%;
-    } 
-}
-
-
-.hamburger {
-    display: none;
-
-    @include ssm {
-        display: flex;
-        flex-direction: row-reverse;  
-        padding: 60px;
+    .traffic-light {
+      width: 150px;
+      height: 400px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      padding: 20px;
     }
 
+    .traffic-light .light {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
 
-.hamburger-bar {
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    margin: 2px ;
-    text-align: right;
-    // -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-}
+    .red.active{
+      background-color: red;
+    }
 
+    .yellow.active{
+      background-color: yellow;
+    }
 
+    .green.active{
+      background-color: green;
+    }
 
+    .button {
+      width: 150px;
+      height: 50px;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px;
+      display: block;
+      margin: 20px auto;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 1px;
+    }
+    .button:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border: 1px solid rgb(0, 0, 0);
 
-// @include md {
-//     .nav-menu {
-//         position: fixed;
-//         left: -100%;
-//         top: 5rem;
-//         flex-direction: column;
-//         background-color: #fff;
-//         width: 100%;
-//         border-radius: 10px;
-//         text-align: center;
-//         transition: 0.3s;
-//         box-shadow:
-//             0 10px 27px rgba(0, 0, 0, 0.05);
-//     }
+    }
 
-    // .nav-menu.active {
-    //     left: 0;
-    // }
+    //модальне вікно
+    .modal-bg {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
 
-    // .nav-li {
-    //     margin: 2.5rem 0;
-    // }
+    .modal-content {
+      background-color: #f3f3f3;
+      margin: 15% auto;
+      padding: 20px;
+      max-width: 400px;
+      border-radius: 30px;
 
-   
-    // .hamburger {
-    //     display: block;
-    //     cursor: pointer;
-    // }
+    }
 
-// .hamburger.active .hamburger-bar:nth-child(2) {
-//     opacity: 0;
-// }
+    .closeX {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-// .hamburger.active .hamburger-bar:nth-child(1) {
-//     transform: translateY(8px) rotate(45deg);
-// }
-
-// .hamburger.active .hamburger-bar:nth-child(3) {
-//     transform: translateY(-8px) rotate(-45deg);
-// }
-
+    .closeX:hover {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      cursor: pointer;
+    }
