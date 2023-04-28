@@ -74,7 +74,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -319,113 +320,20 @@ body {
   width: 100%;
 }
 
-header {
-  display: inline;
-  justify-content: end;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  header {
-    height: 80px;
-  }
-}
-@media (max-width: 320px) {
-  header {
-    height: 60px;
-  }
-  header .nav-bar {
-    display: none;
-  }
-}
-
-.nav-bar {
-  display: inline-flex;
-  justify-content: end;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-}
-.nav-bar li {
-  list-style: none;
-  padding-left: 30px;
-}
-.nav-bar li a {
-  text-decoration: none;
-  color: #242635;
-}
-.nav-bar li .nav-link:hover {
-  opacity: 0.7;
-}
-
-main h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 90px;
-  font-weight: 500;
-  line-height: 102px;
-  letter-spacing: -2px;
-}
-@media (max-width: 768px) {
-  main h1 {
-    font-size: 72px;
-    font-weight: 500;
-    line-height: 83px;
-    letter-spacing: -1.6000000238px;
-  }
-}
-@media (max-width: 320px) {
-  main h1 {
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.8000000119px;
-  }
-}
-main p {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 33px;
-  padding: 0 30%;
-}
-@media (max-width: 768px) {
-  main p {
-    padding: 0 10%;
-  }
-}
-@media (max-width: 320px) {
-  main p {
-    padding: 0 5%;
-    font-family: Source Sans Pro;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-  }
-}
-main img {
-  text-align: center;
-  width: 100%;
-}
-
-.hamburger {
-  display: none;
-}
-@media (max-width: 320px) {
-  .hamburger {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 60px;
-  }
-}
-.hamburger .hamburger-bar {
+.grandparent {
+  padding: 20px;
   display: inline-block;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  margin: 2px;
-  text-align: right;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: purple;
 }
 
-/*# sourceMappingURL=style.css.map */
+.parent {
+  padding: 20px;
+  background-color: blue;
+  display: inline-block;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

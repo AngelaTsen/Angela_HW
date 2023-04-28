@@ -292,11 +292,37 @@
 // console.log (fruits);
 
 
-const m1 = ["Banana", "Orange", "Apple", "Mango"];
-const m2 = ["Banana", "Lemon", "Kiwi"];
-const m = m1.concat(m2);
-uniq = a.filter( (item, pos, arr) => !pos || item !== arr[pos - 1] );
+// const m1 = ["Banana", "Orange", "Apple", "Mango"];
+// const m2 = ["Banana", "Lemon", "Kiwi"];
+// const m = m1.concat(m2);
+// uniq = a.filter( (item, pos, arr) => !pos || item !== arr[pos - 1] );
 
-// const uniq = Array.from(new Set(m));
+// // const uniq = Array.from(new Set(m));
 
-console.log (uniq)
+// console.log (uniq)
+
+
+
+// ІВЕНТИ
+
+const grandparent = document.querySelector('.grandparent');
+const parent = document.querySelector('.parent');
+const child = document.querySelector('.child');
+
+// child.addEventListener('click', (event) => {
+// console.log ('child')
+// event.stopPropagation()
+// });
+
+// parent.addEventListener('click', (event) => {
+// event.stopPropagation()
+// console.log ('parent')
+// });
+
+// grandparent.addEventListener('click', (event) => {
+// event.stopPropagation()
+// console.log ('grandparent')
+// });
+    
+
+
