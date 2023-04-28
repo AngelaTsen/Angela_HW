@@ -318,4 +318,8 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   width: 100%;
+}
+
+.textarea-text {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
