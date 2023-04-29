@@ -23,15 +23,17 @@
 
 const div = document.querySelector('div');
 const textarea = document.querySelector('textarea');
-// if 
 
 document.addEventListener('keydown', function(event) {
     if (event.ctrlKey && event.key === 'e') {
         div.style.display = 'none';
         textarea.style.display = 'block';
+        event.preventDefault(); 
     }
     if (event.ctrlKey && event.key === 's') {
+        div.innerHTML = textarea.value;
         textarea.style.display = 'none';
         div.style.display = 'block';
+        event.preventDefault(); 
     }
 });
