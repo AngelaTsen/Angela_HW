@@ -74,8 +74,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -315,25 +314,14 @@ template {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  text-align: center;
-  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-.grandparent {
-  padding: 20px;
-  display: inline-block;
-  background-color: purple;
+.owl-slider {
+  height: 700px;
+  width: 1440px;
+  background-color: rgb(225, 225, 225);
 }
 
-.parent {
-  padding: 20px;
-  background-color: blue;
-  display: inline-block;
-}
-
-.child {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */

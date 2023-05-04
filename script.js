@@ -305,9 +305,9 @@
 
 // ІВЕНТИ
 
-const grandparent = document.querySelector('.grandparent');
-const parent = document.querySelector('.parent');
-const child = document.querySelector('.child');
+// const grandparent = document.querySelector('.grandparent');
+// const parent = document.querySelector('.parent');
+// const child = document.querySelector('.child');
 
 // child.addEventListener('click', (event) => {
 // console.log ('child')
@@ -324,5 +324,7 @@ const child = document.querySelector('.child');
 // console.log ('grandparent')
 // });
     
-
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
 
