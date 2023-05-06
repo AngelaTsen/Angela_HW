@@ -3,16 +3,108 @@
 @import "./mixins";
 @import "./responsive";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
 
-body {
-margin: 0;
-font-family: sans-serif;}
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+    padding: 0 20px;
+
+	@include xl {
+		max-width: 1000px;
+	}
+	@include xl {
+		max-width: 1000px;
+	}
+	@include lg {
+		max-width: 800px;
+	}
+	@include md {
+		max-width: 700px;
+	}
+	@include sm {
+		max-width: 500px;
+	}
+    @include ssm {
+		max-width: 300px;
+	}
+}
+
+header {
+    display: flex;
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background-color: $brown-light;
+        
+    .navbar {
+        display: inline-flex;
+
+        // @include md {
+        //     display: none;
+        // }
+        // @include sm {
+        //     display: none;
+        // }  
+        // @include ssm {
+        //     display: none;
+        // }    
+    
+        &__link{
+            text-decoration: none;
+            text-align: center;
+            @include fonts($font-m,20px,500, 24px, $black);
+        }  
+
+        &__link:hover {
+                color: $brown-light;
+         }
+        li{
+            list-style: none;
+            padding-left: 15px;
+                
+        }
+        
+        li:hover {
+        background-color: $tomato-light;
+        height: 80px;
+        width: 93px;
+        }
+    }
+ }
 
 .owl-slider {
 height: 700px;
-width: 1440px;
-background-color: rgb(225, 225, 225);
+width: 1400px;
+margin: 0 auto;
+
+  &__slider {
+    display: flex;
+    justify-content: center;
+  }
+  
+   img {
+    width: 100%;
+    height: auto;
+  }
+}
+.owl-theme .owl-dots .owl-dot span{
+    position: relative;
+    bottom: 60px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $tomato-light;
+}
+h1 {
+    @include fonts($font-m,32px,700, 40px, $black);
+    text-align: center;
+    text-transform: uppercase;
+}
+.img-gitara {
+height: 300px;
+width: 200px;
+border: 1px solid $brown-light;
 }

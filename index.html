@@ -10,61 +10,62 @@
     <title>Document</title>
 </head>
 <body>
+<header class="wraper">
+    <a href="#" class="nav-logo"><img src="/image/logo-1.svg" alt="logo"></a> 
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="#" class="navbar__link">Home</a>
+            </li>
+            <li>
+                <a href="#" class="navbar__link">Catalog</a>
+            </li>
+            <li>
+                <a href="#" class="navbar__link">News</a>
+            </li>
+            <li>
+                <a href="#" class="navbar__link">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="icon-nav">
+        <img src="/image/search-icon.svg" alt="search">
+        <img src="/image/profile-icon.svg" alt="profile">
+    </div>
+    <div class="hamburger">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+    </div>
+
+</header>
+<div class="owl-carousel slider1 owl-theme">
+    <div class="owl-carousel__slider"> <img src="/image/image-2.png" alt=""> </div>
+    <div class="owl-carousel__slider"> <img src="/image/image-1.png" alt=""> </div>
+    <div class="owl-carousel__slider"> <img src="/image/image.png" alt=""> </div>
+   
+  </div>
+<main class="wraper">
+    <h1>new arrivals</h1>
+    <div class="owl-carousel slider2 owl-theme">
+        <div class="item img-gitara"><img src="/image/photo.png" alt=""></div>
+        <div class="item img-gitara"><img src="/image/photo-1.png" alt=""></div>
+        <div class="item img-gitara"><img src="/image/photo-2.png" alt=""></div>
+        <div class="item img-gitara"><img src="/image/photo-3.png" alt=""></div>
+        <div class="item img-gitara"><img src="/image/photo-4.png" alt=""></div>
+
+    </div>
     
-    <div class="owl-carousel">
-        <div class="owl-slider"> Your Content </div>
-        <div class="owl-slider"> Your Content </div>
-        <div class="owl-slider"> Your Content </div>
-        <div class="owl-slider"> Your Content </div>
-        <div class="owl-slider"> Your Content </div>
-        <div class="owl-slider"> Your Content </div>
-        <div class="owl-slider"> Your Content </div>
-      </div>
+
+
+</main> 
 <script
   src="https://code.jquery.com/jquery-3.6.4.min.js"
   integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
   crossorigin="anonymous"></script>
-  <script src="/widgets/owl-carousel/owl.carousel.min.js"></script>
-    <script defer src="/script.js"></script>
-  <!-- <header class="wraper">
-    <nav>
-        <a href="#" class="nav-logo">WebDev.</a> -->
-        <!-- <ul  class="nav-bar">
-            <li class="nav-li"> 
-                <a href="#" class="nav-link">Works</a>
-            </li>
-            <li class="nav-li">
-                <a href="#" class="nav-link">Services</a>
-            </li>
-            <li class="nav-li">
-                <a href="#" class="nav-link">Contacts</a>
-            </li>
-        </ul>
-        <div class="hamburger">
-            <span class="hamburger-bar"></span>
-            <span class="hamburger-bar"></span>
-            <span class="hamburger-bar"></span>
-        </div>
-    </nav>
-</header>
-<main class="wraper">
-    <h1>Patagonia</h1>
-    <p>
-        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.
-    </p> --> 
-    <!-- <img src="/image/Bitmap-2.png" srcset="/image/Bitmap-1.png 2px, /image/Bitmap.png 3px" alt="Bitmap"> -->
-    
-    <!-- <picture>
-        <source media="(max-width: 768px)" srcset="/image/Bitmap-1.png">
-        <source media="(max-width: 320px)" srcset="/image/Bitmap.png">
-        <img src="/image/Bitmap-2.png" alt="Bitmap">
-    </picture>
-
-
-
-</main> -->
-
-<!-- <script>
+<script src="/widgets/owl-carousel/owl.carousel.min.js"></script>
+<script defer src="/script.js"></script>
+<script>
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
 
@@ -84,6 +85,6 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-</script> -->
+</script> 
 </body>
 </html>
