@@ -314,14 +314,6 @@ template {
 }
 
 body {
-  margin: 0;
+  padding: 20px;
   font-family: sans-serif;
 }
-
-.owl-slider {
-  height: 700px;
-  width: 1440px;
-  background-color: rgb(225, 225, 225);
-}
-
-/*# sourceMappingURL=style.css.map */
