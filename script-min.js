@@ -1,0 +1,1 @@
+fetch("https://jsonplaceholder.typicode.com/todos/").then((t=>t.json())).then((t=>{const e=document.getElementById("posts");t.forEach(((o,n)=>{const c=n<t.length-1?t[n+1].id:"",d=document.createElement("a");d.textContent=o.title,d.href=`https://jsonplaceholder.typicode.com/todos/${c}`,e.appendChild(d)}))}));

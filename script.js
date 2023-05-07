@@ -324,7 +324,56 @@
 // console.log ('grandparent')
 // });
     
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
+
+// // слайдер
+// $(document).ready(function(){
+//     $(".owl-carousel").owlCarousel();
+//   });
+
+// const API = "https://swapi.dev/api/planets/";
+
+// const getData = (url) => { return fetch(urt)
+// .then((res) => res.json())
+// .then((data) => data);
+// }
+
+// const renderPlanets = (planets) => {
+
+// planets.forEach(element => {
+// const div = document.createElement('div') ;
+// div.innerText = element.name;
+// document.body.appendChild(div);
+
+// const displayPlanets = async () => {
+// let planets = [];
+// let url = API;
+// while (uri) {
+// const data = await getData(url);
+// url = data. next;
+// console.log(data)
+// planets = [...planets, ...data. results];
+// renderPlanets (planets);
+// };
+// displayPlanets();
+
+
+// fetch('https://jsonplaceholder.typicode.com/todos/')
+//   .then(response => response.json())
+//   .then(posts => {
+//     const postsContainer = document.getElementById('posts');
+    
+//     posts.forEach((post, index) => {
+//       const nextPostId = index < posts.length - 1 ? posts[index+1].id : '';
+//       const link = document.createElement('a');
+//       link.textContent = post.title;
+//       link.href = `https://jsonplaceholder.typicode.com/todos/${nextPostId}`;
+//       postsContainer.appendChild(link);
+//     });
+//   });
+
+  fetch('https://jsonplaceholder.typicode.com/todos/')
+  .then(response => response.json())
+  .then((data) => data);
+  
+  const postsWrapper = document.body.querySelector('#postsWrapper');
 
