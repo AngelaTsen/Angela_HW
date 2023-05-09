@@ -11,8 +11,9 @@ buttonSearch.addEventListener('click', () => {
 fetch('https://api.themoviedb.org/3/search/movie?api_key=684ecd12253bde93eb817856fa49084b&query='+filmQuery)
     .then(response => response.json())
     .then(data => {
-        if(data.results.lenght === undefined){
+        if(!data.results.length){
         divElement.innerHTML = 'Нічого не знайдено :(';
+        return;
         }
 
 console.log(data);
