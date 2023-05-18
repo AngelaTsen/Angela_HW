@@ -3,16 +3,571 @@
 @import "./mixins";
 @import "./responsive";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+  transform: all 0.1s ease-in;
+}
+header {
+  @media (min-width: 1440px) {
+  }
+  @media (min-width: 1200px) {
+  }
+}
 
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
 
-body {
-margin: 0;
-font-family: sans-serif;}
+  @include md {
+    max-width: 700px;
+  }
 
-.owl-slider {
-height: 700px;
-width: 1440px;
-background-color: rgb(225, 225, 225);
+  @include ssm {
+    max-width: 300px;
+  }
+}
+.owl-carousel {
+  position: relative;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.slider1 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .owl-dots {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #ffffff;
+  }
+
+  .owl-dot {
+    margin-bottom: 40px;
+  }
+
+  .owl-dot span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border-color: #ffffff;
+  }
+}
+.slider {
+  position: relative;
+  // background: linear-gradient(50deg, #0d6efd87, rgb(126 90 255));
+  z-index: 2;
+  // height: 800px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 50px 0;
+
+    &__logo {
+      max-width: 240px;
+    }
+
+    &__menu {
+      display: inline-flex;
+      margin: 0;
+      padding: 10px;
+
+      &-item {
+        margin-right: 30px;
+        display: inline-block;
+        @include fonts($font-m, 14px, 400, 18px, #ffffff);
+        a {
+          @include fonts($font-m, 14px, 400, 18px, #ffffff);
+          text-decoration: none;
+          .svg {
+            transform: translateY(-2px);
+            margin-right: 15px;
+          }
+        }
+        a:hover {
+          .svg {
+            fill: white;
+          }
+        }
+      }
+    }
+
+    &__icons {
+      display: flex;
+      margin-left: 10px;
+      &-item {
+        padding-left: 20px;
+      }
+    }
+    svg:hover {
+      transition: fill 0.7s;
+      fill: #ffffff;
+      path {
+        fill: none;
+        stroke: #ffffff;
+      }
+    }
+  }
+  &__content {
+    @include fonts($font-m, 80px, 700, 97px, #ffffff);
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 175px 0 250px 0px;
+    @include md {
+      padding: 150px 0px;
+    }
+  }
+
+  &__title {
+    @include fonts($font-m, 80px, 700, 98px, #ffffff);
+    letter-spacing: 0.1em;
+    @include md {
+      @include fonts($font-m, 50px, 700, 60px, #ffffff);
+    }
+  }
+
+  &__description {
+    @include fonts($font-m, 18px, 400, 22px, #ffffff);
+    letter-spacing: 0.3em;
+  }
+
+  &__nav__arrov {
+    position: relative;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__nav__arrov:hover {
+    fill: #ffffff;
+    path {
+      fill: none;
+      stroke: #ffffff;
+    }
+  }
+}
+
+h1 {
+  @include fonts($font-m, 44px, 700, 54px, $color-main);
+  text-align: center;
+  margin: 130px 0 100px 0;
+  position: relative;
+  @include md {
+    @include fonts($font-m, 35px, 700, 44px, $color-main);
+    margin-top: 75px;
+  }
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background-color: $color-main;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  &__image {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+
+    // width: 630px;
+    //     @include md {
+    //     width: 300px;
+    //     }
+
+    //     @include ssm {
+    //         width: 150px;
+    // }
+
+    &__img1 {
+      position: absolute;
+      bottom: -10%;
+      right: 27%;
+      width: 75%;
+    }
+    &__img1-1 {
+      position: absolute;
+      bottom: -10%;
+      left: 27%;
+      width: 75%;
+    }
+    &__img2 {
+      width: 75%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .img-2 {
+      float: right;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    max-width: 440px;
+    &__description {
+      @include fonts($font-os, 18px, 400, 30px, $color-main);
+      text-align: left;
+    }
+    &__p {
+      @include fonts($font-m, 22px, 400, 27px, $color-main);
+      text-align: left;
+      margin-top: 120px;
+    }
+    &__h2 {
+      @include fonts($font-m, 44px, 700, 54px, $color-main);
+      text-align: left;
+    }
+    &__btn-m-d {
+      @include fonts($font-m, 14px, 400, 17px, #000000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 1px solid #2c4058;
+      background-color: white;
+      height: 50px;
+      width: 190px;
+    }
+    .location {
+      @include fonts($font-os, 15px, 400, 20px, $color-main);
+      font-style: italic;
+      margin-top: 60px;
+    }
+    &__btn-m-d:hover {
+      background-color: #2c4058;
+      color: white;
+    }
+  }
+  .block2 {
+    margin-left: 215px;
+  }
+  .block1 {
+    margin-right: 215px;
+  }
+  &__image {
+    width: 50%;
+    position: relative;
+  }
+}
+
+.gallery {
+  &__imgs {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    cursor: url(/image/Group.svg), auto;
+
+    &-1 {
+      grid-area: 1/1/3/3;
+    }
+    &-2 {
+      grid-area: 1/3/2/4;
+    }
+    &-3 {
+      grid-area: 1/4/2/5;
+    }
+    &-4 {
+      grid-area: 2/3/3/4;
+    }
+    &-5 {
+      grid-area: 2/4/3/5;
+    }
+  }
+  &__btn {
+    @include fonts($font-m, 14px, 400, 17px, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #2c4058;
+    background-color: white;
+    height: 50px;
+    width: 190px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+  }
+&__btn:hover {
+  background-color: #2c4058;
+  color: white;}
+}
+#map {
+  width: 100%;
+  height: 700px;
+  background-color: #ccc;
+}
+
+.card {
+  margin-top: 400px;
+  @include fonts($font-m, 18px, 400, 27px, $color-main);
+  position: absolute;
+  max-width: 770px;
+  height: 450px;
+  background: #ffffff;
+  z-index: 9;
+  left: 50%;
+  transform: translateX(-50%);
+  @include md {
+    width: 70%;
+    height: auto;
+  }
+
+  h1 {
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  &__info {
+    padding: 42px 0 0 60px;
+    display: flex;
+    gap: 30px;
+    @include md {
+      display: inline;
+    }
+
+    &__contacts {
+      width: 286px;
+      height: 196px;
+      font-size: 18px;
+      line-height: 28px;
+
+      p {
+        padding-top: 10px;
+      }
+    }
+
+    &__form {
+      width: 310px;
+      height: 195px;
+      margin: 42px 60px 0 0;
+      right: 60px;
+      text-align: right;
+    }
+
+    input[type="text"] {
+      border: none;
+      border-bottom: 1px solid black;
+      height: 50px;
+      width: 320px;
+    }
+
+    input[type="submit"] {
+      @include fonts($font-m, 14px, 400, 17px, #000000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 1px solid #2c4058;
+      background-color: white;
+      height: 50px;
+      width: 140px;
+      margin-top: 30px;
+      float: right;
+    }
+  }
+}
+footer {
+  background-image: url(/image/Background1.jpg);
+  background-size: cover;
+  height: auto;
+  padding: 230px;
+
+  svg:hover {
+    transition: fill 0.7s;
+    fill: #ffffff;
+    path {
+      fill: none;
+      stroke: #ffffff;
+    }
+  }
+  p {
+    @include fonts($font-m, 14px, 400, 17px, #ffffff);
+    margin-top: 40px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.news {
+  background-image: url(/image/Background2.jpg);
+  background-size: cover;
+  height: auto;
+  padding: 50px;
+  margin-top: 150px;
+  h1 {
+    color: #ffffff;
+  }
+  h1::before {
+    background-color: #ffffff;
+  }
+  svg:hover {
+    transition: fill 0.7s;
+    fill: #ffffff;
+    path {
+      fill: none;
+      stroke: #ffffff;
+    }
+  }
+}
+
+.slider2 {
+  @include fonts($font-m, 18px, 400, 22px, #ffffff);
+  &__img-news {
+    height: 514px;
+    background-color: #ffffff;
+    max-width: 370px;
+  }
+  &__block {
+    padding: 20px;
+  }
+  // img {
+  //   // width: 50%;
+  // }
+
+  p {
+    @include fonts($font-m, 20px, 700, 27px, $color-main);
+    margin-top: 20px;
+  }
+  span {
+    @include fonts($font-os, 18px, 400, 25px, $color-main);
+    margin-top: 15px;
+  }
+  .author {
+    display: flex;
+    gap: 20px;
+    .name {
+      margin-top: 14px;
+      .news__name {
+        @include fonts($font-m, 18px, 400, 22px, $color-main);
+      }
+      .date {
+        @include fonts($font-m, 14px, 400, 17px, #55b7ff);
+      }
+    }
+    img {
+      display: inline;
+      border-radius: 50%;
+      width: 60px;
+      margin-top: 30px;
+    }
+  }
+
+  .owl-nav {
+    width: 100%;
+    display: contents;
+  }
+
+  .owl-prev {
+    position: relative;
+    bottom: 275px;
+    left: -65px;
+  }
+  .owl-next {
+    position: absolute;
+    bottom: 300px;
+    right: -70px;
+  }
+}
+
+.owl-prev,
+.owl-next {
+  box-sizing: border-box;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  border: 1px solid #ffffff !important;
+  border-radius: 50% !important;
+  color: #ffffff !important;
+  background: none !important;
+}
+
+.owl-dot {
+  border: 1px solid #ffffff !important;
+  border-radius: 50% !important;
+  color: #ffffff !important;
+  background: none !important;
+  width: 10px;
+  height: 10px;
+  margin-right: 40px;
+  span {
+    display: none !important;
+  }
+}
+
+.owl-dot.active {
+  background-color: #ffffff !important;
+}
+
+/* The Modal (background) */
+.modal {
+  cursor: auto;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 45%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

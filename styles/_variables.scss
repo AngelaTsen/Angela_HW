@@ -1,7 +1,7 @@
-$color-red: black;
-$color-blue: blue;
-$color-green: green;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-$border-red: 5px solid blue;
+$font-m: 'Montserrat', sans-serif;
+$font-os: "Open Sans", sans-serif;
 
-$font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$color-main: #2C4058;
