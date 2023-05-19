@@ -1,17 +1,14 @@
-
 // const mile = 0.621371192;
 // const km = prompt ('km');
 
 // alert (km * mile);
 // console.log
 
-
 // const selory = 250;
 // const percent= 0.1;
 // const prodazhy = prompt ('введіть суму продажів');
 // const fullSelory = (Number(prodazhy) * percent) + selory;
 // alert(`ваша зп - ${fullSelory} $`);
-
 
 // const name = prompt("введіть ваше ім'я");
 // alert(`Привіт, ${name}!`);
@@ -25,11 +22,10 @@
 // const perumetr = Number(storonaKvadratu) * 4;
 // alert(`Периметр квадрату = ${perumetr} см`);
 
-
 // калькулятор
-// const x = Number(prompt ('введіть перше число')) ; 
-// const operator = prompt ('введіть оператор'); 
-// const y = Number( prompt ('введіть друге число')); 
+// const x = Number(prompt ('введіть перше число')) ;
+// const operator = prompt ('введіть оператор');
+// const y = Number( prompt ('введіть друге число'));
 // let res;
 
 // switch (operator) {
@@ -42,10 +38,8 @@
 // }
 // alert(res) ;
 
-
-
 // дисконт
-// let syma = Number(prompt ('введіть суму покупки')) ; 
+// let syma = Number(prompt ('введіть суму покупки')) ;
 // let res;
 
 // if (syma >= 200 && syma < 300 ) {
@@ -56,12 +50,11 @@
 
 // else if (syma >= 500  ) {
 //     res = syma - (syma * 0.07);}
- 
+
 //     else if (syma <= 299  ) {
-//         res = syma;}    
+//         res = syma;}
 
 // alert(res) ;
-
 
 // тест
 // let qw1 = prompt("Якій сьогодні рік?  1990  2000  2023");
@@ -75,8 +68,8 @@
 // if (qw3 === 'Діма') {res += b; }
 
 // alert (`Ваш бал за тест - ${res}`);
-   
-    // HW
+
+// HW
 
 // const x = 0.1;
 // const y = 0.2;
@@ -84,15 +77,11 @@
 // res = (x + y).toFixed(2);
 // alert(res) ;
 
-
-
 // const x = "1";
 // const y = 2;
 // let res;
 // res = (+x + y);
 // alert(res) ;
-
-
 
 // let rozmir = Number(prompt("Який розмір вашої флешки?")) ;
 // const file = 820;
@@ -100,8 +89,6 @@
 
 // res = Math.floor(rozmir / file);
 // alert(`На вашу флешку поміститься ${res} файл(и)`) ;
-
-
 
 // let sum = Number(prompt("Ясу суму грошей ви маєте в грн?"));
 // let price = Number(prompt("Ціна за одну шололадку в грн?"));
@@ -113,7 +100,6 @@
 // res = sum - (number * price);
 // alert(`Ви можете придбати ${number} шоколадки \nВаш залишок сладатиме ${res} грн`) ;
 
-
 // не працює
 // let x = Number(prompt('Введіть тризначне число'));
 // let res = 0;
@@ -121,9 +107,7 @@
 // res = 100 + x % 10;
 // res = x % 10;
 // x = x/10;
-// alert(res); 
-
-
+// alert(res);
 
 // let sum = Number(prompt('Введітьсуму вкладу в банк в грн \nHа 2 місяці під 5% річних'));
 // const x = 2;
@@ -137,27 +121,23 @@
 
 // for (let index = 0; index < array.length; index++) {
 //     const element = array[index];
-    
+
 //     if(Array.isArray(element)) {
-     
+
 //         for (let i =0; i <  element.length; i++) {
 //             console.log(element[i]);
-//         }   
+//         }
 //     }
 //     else{
 //         console.log(element);
 //     }
 // }
 
-
-
 // let count = Number(prompt("введіть цифру"));
 // while(count>0) {
 // console.log(count);
 // count--;
 // }
-
-
 
 // let count = Number(prompt("скількі овець"));
 // let x= " ";
@@ -166,61 +146,51 @@
 // }
 // console.log(x);
 
-
 // // числа навпаки
 // let count = Number(prompt("введіть число"));
 // for (let index = count; index > 0; index--) {
 //     console.log(index);
 // }
 
-
 // let text='Прівіт, ';
 // let name = prompt('Введіть ваше імя');
 
-// function Message(name, text) { 
+// function Message(name, text) {
 //     alert(text + name + "!");
 //   }
 //   Message(name, text);
-
 
 // let n1 =  Number(prompt('Введіть 1ше число'));
 // let n2 =  Number(prompt('Введіть 2ге число'));
 // let n3 =  Number(prompt('Введіть 3те число'));
 
-// function numb(n1,n2,n3) { 
+// function numb(n1,n2,n3) {
 //     // return Number(`${n1}${n2}${n3}`);
 //     console.log (Number(`${n1}${n2}${n3}`));
 //   }
 //   numb(n1,n2,n3);
-
-
 
 // function getRandom (min, max) {
 //     min = Math.ceil(min);
 //     max = Math.floor(max);
 //     return Math.floor(Math.random() * (max - min+1)) + min;
 // }
-// console.log(getRandom(1,100)); 
-  
+// console.log(getRandom(1,100));
 
 // //  факторіал
-// function factorial(n){ 
-//     let result = 1; 
-//         while(n){ 
-//             result *= n--; 
-//         } 
-// return result; 
+// function factorial(n){
+//     let result = 1;
+//         while(n){
+//             result *= n--;
+//         }
+// return result;
 // }
-// console.log(factorial(5)); 
-
-
+// console.log(factorial(5));
 
 // let suma = ( n1 = 0; n2 = 0; n3 =0; n4 = 0; n5 = 0) => {
 // return n1 + n2 + n3 + n4 + n5
 // }
 // console.log (suma(5,3,5));
-
-
 
 // const obj = {
 //     goods: "чашка",
@@ -261,14 +231,11 @@
 
 // console.log (`${(date.getDate()<10?'0' + date.getDate():'')} ${monthNames[m.getMonth()]} ${date.getFullYear()} ${date.getHours()}:${(date.getMinutes()<10?'0':'') + date.getMinutes() } (${dayNames[d.getDay()]})`)
 
-
-
 // let array = [12, 'sgg', 'hhhhh', true, 23, 56];
 // function arrayX () {
-//     array.forEach(element => console.log(element));   
+//     array.forEach(element => console.log(element));
 // }
 // arrayX();
-
 
 // let n = [12, 1, 23, 56];
 // let sum = (array) => n.reduce((total, value) => total + value,0);
@@ -278,7 +245,6 @@
 // let n = [12, 1, 23, 56];
 // const res = (n) => n.reduce((max, item) => max < item ? item : max);
 // console.log (res(n));
-
 
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // const res = (array, index, ...element) => array.splice(index, 0, ...element);
@@ -291,7 +257,6 @@
 // res(fruits,1);
 // console.log (fruits);
 
-
 // const m1 = ["Banana", "Orange", "Apple", "Mango"];
 // const m2 = ["Banana", "Lemon", "Kiwi"];
 // const m = m1.concat(m2);
@@ -300,8 +265,6 @@
 // // const uniq = Array.from(new Set(m));
 
 // console.log (uniq)
-
-
 
 // ІВЕНТИ
 
@@ -323,7 +286,6 @@
 // event.stopPropagation()
 // console.log ('grandparent')
 // });
-    
 
 // // слайдер
 // $(document).ready(function(){
@@ -356,12 +318,11 @@
 // };
 // displayPlanets();
 
-
 // fetch('https://jsonplaceholder.typicode.com/todos/')
 //   .then(response => response.json())
 //   .then(posts => {
 //     const postsContainer = document.getElementById('posts');
-    
+
 //     posts.forEach((post, index) => {
 //       const nextPostId = index < posts.length - 1 ? posts[index+1].id : '';
 //       const link = document.createElement('a');
@@ -371,9 +332,48 @@
 //     });
 //   });
 
-  fetch('https://jsonplaceholder.typicode.com/todos/')
-  .then(response => response.json())
-  .then((data) => data);
-  
-  const postsWrapper = document.body.querySelector('#postsWrapper');
+// fetch('https://jsonplaceholder.typicode.com/todos/')
+// .then(response => response.json())
+// .then((data) => data);
 
+// const postsWrapper = document.body.querySelector('#postsWrapper');
+
+class User {
+  constructor(name, lastname) {
+    this.name = name;
+    this.lastname = lastname;
+  }
+  get fullName() {
+    return `${this.name} ${this.lastname}`;
+  }
+  set fullName(fullName) {
+    [this.name, this.lastname] = fullName.split(" ");
+  }
+}
+const user = new User("Jane", "Doe");
+console.log(user.fullName);
+user.fullName = "Alice Wood";
+console.log(user.fullName);
+
+class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+  printPosition() {
+    console.log(`Current point position X: ${this.x}, Y: ${this.y}`);
+  }
+}
+// class Child extends Parent
+class Point3D extends Point {
+  constructor(x, y, z) {
+    super(x, y);
+    this.z = z;
+  }
+  printPosition() {
+    super.printPosition();
+    console.log ( `Current point position X: ${this.x}, Y: ${this.y}, Z: ${this.z}`);
+  }
+}
+const point = new Point3D(10, -2, 5);
+point.printPosition();
